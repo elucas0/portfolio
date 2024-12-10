@@ -1,0 +1,16 @@
+{
+  "intro": {
+    "description": "Étudiant au Master Copernicus Terre Numérique"
+  },
+  "menu": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "core": "Cœur",
+    "blocks": "Blocs",
+    "uiKit": "Kit UI",
+    "skills": "Compétences"
+  },
+  "timeline": {
+    "button": "Ouvrir le site"
+  }
+}

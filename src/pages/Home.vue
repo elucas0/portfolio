@@ -1,40 +1,39 @@
 <script setup>
-import { ref } from "vue";
-
-const text = ref(null);
-const msg = ref(null);
-
-function greet() {
-  msg.value = "Hello " + text.value;
-}
-
-const value = ref(10);
+import Card from "primevue/card";
+import Timeline from "../components/Timeline.vue";
+import Image from "primevue/image";
+import i18next from "i18next";
+import Carousel from "../components/Carousel.vue";
 </script>
 
 <template>
-  <div class="flex items-center justify-center min-h-screen p-10">
+  <div
+    class="flex flex-col items-center justify-center min-h-screen pt-10 gap-4 max-w-3xl"
+  >
     <section
-      class="bg-white dark:bg-surface-900 p-10 rounded-xl flex flex-col gap-8 max-w-3xl"
+      class="bg-white dark:bg-surface-900 p-10 rounded-xl flex gap-8 w-full"
     >
-      <h4 class="text-black dark:text-white font-bold text-center">
-        ePortfolio
-      </h4>
-      <div class="flex justify-center gap-4">
-        <Knob v-model="value" :min="-50" :max="50" />
-        <Knob v-model="value" :min="-50" :max="50" />
-      </div>
-      <div class="flex gap-4">
-        <InputText v-model="text" maxlength="20" fluid />
-        <Button
-          label="Submit"
-          @click="greet"
-          class="min-w-20"
-          :disabled="!text"
-        />
-      </div>
-      <div class="h-8 text-center text-primary text-xl">
-        {{ msg }}
+      <Image
+        src="src/assets/moi.jpg"
+        alt="Photo de profil Elouann"
+        width="200"
+        image-class="rounded-full border-4"
+      />
+      <div class="flex flex-col gap-2">
+        <h1 class="text-5xl font-extrabold dark:text-white">Elouann Lucas</h1>
+        <p class="dark:text-white">{{ i18next.t("intro.description") }}</p>
       </div>
     </section>
+    <section
+      class="bg-white dark:bg-surface-900 p-10 rounded-xl flex flex-col gap-8 w-full"
+    >
+      <Timeline />
+    </section>
+    <section
+      class="bg-white dark:bg-surface-900 p-10 rounded-xl flex flex-col gap-8 w-full"
+    >
+      <Carousel />
+    </section>
   </div>
+  <ScrollTop />
 </template>

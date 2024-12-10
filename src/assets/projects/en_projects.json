@@ -1,0 +1,20 @@
+{
+  "lpv": {
+    "title": "La Palme Verte",
+    "description": "Blog for UBS students association",
+    "status": "Finished",
+    "image": "src/assets/projects/opengraph-image.jpg"
+  },
+  "pnr": {
+    "title": "Projet PNR",
+    "description": "ERP desktop application for volunteer biologists",
+    "status": "Finished",
+    "image": "src/assets/projects/PNR.jpg"
+  },
+  "geosim": {
+    "title": "Spatial Simulations",
+    "description": "Diverse spatial simulations using Gama Platform",
+    "status": "Ongoing",
+    "image": "src/assets/projects/matsimlyon.png"
+  }
+}

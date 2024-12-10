@@ -1,0 +1,13 @@
+{
+  "intro": {
+    "description": "Student at the Copernicus Master in Digital Earth"
+  },
+  "menu": {
+    "home": "Home",
+    "projects": "Projects",
+    "core": "Core",
+    "blocks": "Blocks",
+    "uiKit": "UI Kit",
+    "skills": "Skills"
+  }
+}

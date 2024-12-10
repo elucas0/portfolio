@@ -7,9 +7,26 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Accordion: typeof import('primevue/accordion')['default']
+    AccordionContent: typeof import('primevue/accordioncontent')['default']
+    AccordionHeader: typeof import('primevue/accordionheader')['default']
+    AccordionPanel: typeof import('primevue/accordionpanel')['default']
+    Avatar: typeof import('primevue/avatar')['default']
+    Badge: typeof import('primevue/badge')['default']
     Button: typeof import('primevue/button')['default']
+    Card: typeof import('primevue/card')['default']
+    Carousel: typeof import('./src/components/Carousel.vue')['default']
+    Dialog: typeof import('primevue/dialog')['default']
     InputText: typeof import('primevue/inputtext')['default']
     Knob: typeof import('primevue/knob')['default']
-    Menubar: typeof import('primevue/menubar')['default']
+    Menubar: typeof import('./src/components/Menubar.vue')['default']
+    ScrollTop: typeof import('primevue/scrolltop')['default']
+    Tag: typeof import('primevue/tag')['default']
+    ThemeToggle: typeof import('./src/components/ThemeToggle.vue')['default']
+    Timeline: typeof import('./src/components/Timeline.vue')['default']
+    ToggleSwitch: typeof import('primevue/toggleswitch')['default']
+  }
+  export interface ComponentCustomProperties {
+    Ripple: typeof import('primevue/ripple')['default']
   }
 }
