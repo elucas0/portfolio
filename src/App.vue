@@ -10,7 +10,7 @@ const visible = ref(true);
 <template>
   <Menubar class="sticky top-5 z-20" />
   <Home />
-  <Dialog v-model:visible="visible" modal :style="{ width: '25rem' }">
+  <Dialog v-model:visible="visible" modal :style="{ width: '30rem' }">
     <template #header>
       <div class="inline-flex items-center justify-center gap-2">
         <span class="pi pi-exclamation-triangle"></span>
