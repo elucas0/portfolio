@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Timeline from "primevue/timeline";
 import { ref } from "vue";
+import i18next from "i18next";
 
 const events = ref([
   {
@@ -55,12 +56,15 @@ const events = ref([
             />
             <Button
               as="a"
-              label="Go to website"
-              :href="`${event.item.link}`"
+              :label="i18next.t('timeline.button')"
+              :href="event.item.link"
               target="_blank"
               rel="noopener"
               class="mt-5"
-            ></Button>
+              severity="secondary"
+              iconPos="right"
+              icon="pi pi-arrow-right"
+            />
           </template>
         </Card>
       </template>

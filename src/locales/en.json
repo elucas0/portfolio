@@ -4,10 +4,14 @@
   },
   "menu": {
     "home": "Home",
+    "timeline": "Timeline",
     "projects": "Projects",
-    "core": "Core",
-    "blocks": "Blocks",
-    "uiKit": "UI Kit",
+    "all": "View all",
+    "web": "Web apps",
+    "gis": "GIS & EO",
     "skills": "Skills"
+  },
+  "timeline": {
+    "button": "Visit website"
   }
 }

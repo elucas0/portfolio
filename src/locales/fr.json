@@ -4,10 +4,11 @@
   },
   "menu": {
     "home": "Accueil",
+    "timeline": "Parcours",
     "projects": "Projets",
-    "core": "Cœur",
-    "blocks": "Blocs",
-    "uiKit": "Kit UI",
+    "all": "Tout voir",
+    "web": "Applications web",
+    "gis": "SIG & Observation terrestre",
     "skills": "Compétences"
   },
   "timeline": {

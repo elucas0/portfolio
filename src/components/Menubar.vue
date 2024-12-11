@@ -6,33 +6,56 @@ import "primeicons/primeicons.css";
 import ThemeToggle from "./ThemeToggle.vue";
 import i18next from "i18next";
 
+const scrollToSection = (element?: HTMLElement) => {
+  element?.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+};
+
 const items = ref([
   {
     label: i18next.t("menu.home"),
+    command: () => {
+      scrollToSection(document.getElementById("header") ?? undefined);
+    },
+  },
+  {
+    label: i18next.t("menu.timeline"),
+    command: () => {
+      scrollToSection(document.getElementById("timeline") ?? undefined);
+    },
   },
   {
     label: i18next.t("menu.projects"),
     items: [
       {
-        label: "Core",
-        icon: "pi pi-bolt",
-      },
-      {
-        label: "Blocks",
-        icon: "pi pi-server",
+        label: i18next.t("menu.all"),
+        icon: "pi pi-arrow-right",
+        badge: 3,
+        command: () => {
+          scrollToSection(document.getElementById("projects") ?? undefined);
+        },
       },
       {
         separator: true,
       },
       {
-        label: "UI Kit",
-        icon: "pi pi-pencil",
+        label: i18next.t("menu.web"),
+        items: [{}],
+      },
+      {
+        label: i18next.t("gis"),
+        items: [{}],
       },
     ],
   },
   {
-    label: i18next.t("menu.skills")
-  }
+    label: i18next.t("menu.skills"),
+    command: () => {
+      scrollToSection(document.getElementById("skills") ?? undefined);
+    },
+  },
 ]);
 </script>
 
@@ -65,7 +88,16 @@ const items = ref([
       </a>
     </template>
     <template #end>
-      <div class="card flex justify-center">
+      <div class="flex items-center gap-3">
+        <Button
+          as="a"
+          href="https://github.com/elucas0/portfolio"
+          icon="pi pi-github"
+          rounded
+          severity="secondary"
+          target="_blank"
+          rel="noopener"
+        />
         <ThemeToggle />
       </div>
     </template>
