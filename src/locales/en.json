@@ -1,6 +1,6 @@
 {
   "intro": {
-    "description": "Student at the Copernicus Master in Digital Earth"
+    "description": "Bonjour ! I am currently a student at the University of Salzburg, Austria in the MSc Copernicus in Digital Earth Program and next year I will be specializing in Geodata Science at the University of Southern Brittany, France."
   },
   "menu": {
     "home": "Home",
@@ -13,5 +13,10 @@
   },
   "timeline": {
     "button": "Visit website"
+  },
+  "projects": {
+    "web": "Web apps",
+    "gis": "GIS & EO",
+    "open": "Open repository"
   }
 }

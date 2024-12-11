@@ -13,5 +13,10 @@
   },
   "timeline": {
     "button": "Ouvrir le site"
+  },
+  "projects": {
+    "web": "Applications web",
+    "gis": "SIG & Observation terrestre",
+    "open": "Ouvrir le dépôt"
   }
 }

@@ -7,14 +7,22 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Avatar: typeof import('primevue/avatar')['default']
+    Badge: typeof import('primevue/badge')['default']
     Button: typeof import('primevue/button')['default']
     Card: typeof import('primevue/card')['default']
-    Carousel: typeof import('./src/components/Carousel.vue')['default']
+    Carousel: typeof import('./src/components/ProjectsCarousel.vue')['default']
+    Divider: typeof import('primevue/divider')['default']
     Header: typeof import('./src/components/Header.vue')['default']
     Image: typeof import('primevue/image')['default']
     Menubar: typeof import('./src/components/Menubar.vue')['default']
+    ProjectsCarousel: typeof import('./src/components/ProjectsCarousel.vue')['default']
     ScrollTop: typeof import('primevue/scrolltop')['default']
     Skills: typeof import('./src/components/Skills.vue')['default']
+    Tab: typeof import('primevue/tab')['default']
+    TabList: typeof import('primevue/tablist')['default']
+    TabPanel: typeof import('primevue/tabpanel')['default']
+    TabPanels: typeof import('primevue/tabpanels')['default']
     Tag: typeof import('primevue/tag')['default']
     ThemeToggle: typeof import('./src/components/ThemeToggle.vue')['default']
     Timeline: typeof import('./src/components/Timeline.vue')['default']
@@ -22,5 +30,6 @@ declare module 'vue' {
   }
   export interface ComponentCustomProperties {
     Ripple: typeof import('primevue/ripple')['default']
+    Tooltip: typeof import('primevue/tooltip')['default']
   }
 }

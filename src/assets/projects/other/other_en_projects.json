@@ -1,0 +1,14 @@
+{
+  "geosim": {
+    "title": "Spatial Simulations",
+    "description": "Diverse spatial simulations using Gama Platform",
+    "status": "Ongoing",
+    "image": "src/assets/projects/other/matsimlyon.png",
+    "link": "https://github.com/elucas0/SAE-PNR"
+  },
+  "gee": {
+    "title": "Google Earth Engine",
+    "description": "EO scripts using Google Earth Engine",
+    "status": "Ongoing"
+  }
+}

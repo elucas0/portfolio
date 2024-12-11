@@ -35,7 +35,7 @@ const events = ref([
         </span>
       </template>
       <template #content="event">
-        <Card class="mt-4">
+        <Card class="mt-4 bg-white/50 dark:bg-surface-900 backdrop-blur-md">
           <template #title>
             {{ event.item.status }}
           </template>
@@ -43,24 +43,26 @@ const events = ref([
             {{ event.item.date }}
           </template>
           <template #content>
-            <img
+            <Image
               v-if="event.item.image"
               :src="`src/assets/logo/${event.item.image}`"
               :alt="event.item.name"
               width="200"
+              class="rounded-md"
             />
-            <img
+            <Image
               v-if="event.index === 1"
               :src="`src/assets/logo/EN Co-funded by the EU_POS.jpg`"
               width="200"
+              class="rounded-md"
             />
+            <Divider />
             <Button
               as="a"
               :label="i18next.t('timeline.button')"
               :href="event.item.link"
               target="_blank"
               rel="noopener"
-              class="mt-5"
               severity="secondary"
               iconPos="right"
               icon="pi pi-arrow-right"

@@ -1,0 +1,13 @@
+{
+  "geosim": {
+    "title": "Simulations Spatiales",
+    "description": "Diverses simulations spatiales utilisant Gama Platform",
+    "status": "En cours",
+    "image": "src/assets/projects/other/matsimlyon.png"
+  },
+  "gee": {
+    "title": "Google Earth Engine",
+    "description": "Scripts d'analyse terrestre utilisant Google Earth Engine",
+    "status": "En cours"
+  }
+}

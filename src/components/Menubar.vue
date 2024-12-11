@@ -45,7 +45,7 @@ const items = ref([
         items: [{}],
       },
       {
-        label: i18next.t("gis"),
+        label: i18next.t("menu.gis"),
         items: [{}],
       },
     ],
