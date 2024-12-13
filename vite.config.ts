@@ -12,4 +12,5 @@ export default defineConfig({
       resolvers: [PrimeVueResolver()],
     }),
   ],
+  base: "/portfolio/",
 });
