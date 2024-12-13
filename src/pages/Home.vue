@@ -8,10 +8,10 @@ import Header from "../components/Header.vue";
 import Skills from "../components/Skills.vue";
 import Tabs from "primevue/tabs";
 
-import webEnProjects from "../assets/projects/web/web_en_projects.json";
-import webFrProjects from "../assets/projects/web/web_fr_projects.json";
-import otherEnProjects from "../assets/projects/other/other_en_projects.json";
-import otherFrProjects from "../assets/projects/other/other_fr_projects.json";
+import webEnProjects from "../locales/web_en_projects.json"
+import webFrProjects from "../locales/web_fr_projects.json";
+import otherEnProjects from "../locales/other_en_projects.json";
+import otherFrProjects from "../locales/other_fr_projects.json";
 </script>
 
 <template>

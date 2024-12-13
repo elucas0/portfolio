@@ -3,14 +3,14 @@
     "title": "La Palme Verte",
     "description": "Blog for UBS students association",
     "status": "Finished",
-    "image": "src/assets/projects/web/opengraph-image.jpg",
+    "image": "/assets/projects/web/opengraph-image.jpg",
     "link": "https://github.com/HeineZo/la-palme-verte"
   },
   "pnr": {
     "title": "Projet PNR",
     "description": "ERP desktop application for volunteer biologists",
     "status": "Finished",
-    "image": "src/assets/projects/web/PNR.jpg",
+    "image": "/assets/projects/web/PNR.jpg",
     "link": "https://github.com/elucas0/SAE-PNR"
   }
 }

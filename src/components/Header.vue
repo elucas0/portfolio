@@ -7,7 +7,7 @@ import Divider from "primevue/divider";
   <div class="flex flex-col sm:flex-row gap-8">
     <div class="w-fit">
       <Image
-        src="src/assets/moi.jpg"
+        src="/assets/moi.jpg"
         alt="Photo de profil Elouann"
         width="450"
         image-class="rounded-full border-4"
@@ -20,7 +20,7 @@ import Divider from "primevue/divider";
       <div class="flex gap-4">
         <Button
           as="a"
-          onclick="window.open('public/europass_elouann_lucas.pdf')"
+          onclick="window.open('/europass_elouann_lucas.pdf')"
           icon="pi pi-file-pdf"
           aria-label="Download Europass"
           v-tooltip.bottom="'Open Europass'"

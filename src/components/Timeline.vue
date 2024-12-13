@@ -45,14 +45,14 @@ const events = ref([
           <template #content>
             <Image
               v-if="event.item.image"
-              :src="`src/assets/logo/${event.item.image}`"
+              :src="`/assets/logo/${event.item.image}`"
               :alt="event.item.name"
               width="200"
               class="rounded-md"
             />
             <Image
               v-if="event.index === 1"
-              :src="`src/assets/logo/EN Co-funded by the EU_POS.jpg`"
+              :src="`/assets/logo/EN Co-funded by the EU_POS.jpg`"
               width="200"
               class="rounded-md"
             />

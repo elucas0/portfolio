@@ -4,7 +4,7 @@ import i18n from "./i18n";
 
 import PrimeVue from "primevue/config";
 
-import "./assets/tailwind.css";
+import "./tailwind.css";
 import "./style.css"
 
 const app = i18n(createApp(App));

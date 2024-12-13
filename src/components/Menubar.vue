@@ -62,7 +62,7 @@ const items = ref([
 <template>
   <Menubar :model="items">
     <template #start>
-      <img width="35" height="40" src="../assets/logo/earth-global.svg"
+      <img width="35" height="40" src="/assets/logo/earth-global.svg"
       class="cursor-pointer hover:rotate-1" href="../pages/Home.vue"
     </template>
     <template #item="{ item, props, hasSubmenu, root }">
