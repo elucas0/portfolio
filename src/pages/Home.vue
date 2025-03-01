@@ -29,7 +29,7 @@ import otherFrProjects from "../locales/other_fr_projects.json";
     </section>
     <section
       id="projects"
-      class="bg-white p-10 rounded-xl flex flex-col gap-8 w-full"
+      class="bg-white dark:bg-surface-900 p-10 rounded-xl flex flex-col gap-8 w-full"
     >
       <Tabs value="0">
         <TabList>
@@ -60,7 +60,7 @@ import otherFrProjects from "../locales/other_fr_projects.json";
     </section>
     <section
       id="skills"
-      class="bg-white dark:bg-surface-900 p-10 rounded-xl flex flex-col gap-8 w-full"
+      class="dark:bg-surface-900 p-10 rounded-xl flex flex-col gap-8 w-full"
     >
       <Skills />
     </section>

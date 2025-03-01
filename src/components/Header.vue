@@ -6,11 +6,11 @@ import Divider from "primevue/divider";
 <template>
   <div class="flex flex-col sm:flex-row gap-8">
     <div class="w-fit">
-      <Image
+      <img
         src="/assets/moi.jpg"
         alt="Photo de profil Elouann"
         width="450"
-        image-class="rounded-full border-4"
+        class="rounded-full border-4"
       />
     </div>
     <div class="flex flex-col gap-2">
