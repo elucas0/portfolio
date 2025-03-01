@@ -3,7 +3,7 @@
     "title": "Spatial Simulations",
     "description": "Diverse spatial simulations using Gama Platform",
     "status": "Ongoing",
-    "image": "/assets/projects/other/matsimlyon.png",
+    "image": "projects/other/matsimlyon.png",
     "link": "https://github.com/elucas0/land-use-simulation"
   },
   "gee": {

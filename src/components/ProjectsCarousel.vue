@@ -18,6 +18,10 @@ const props = withDefaults(
 const projects = ref(
   i18next.language === "fr" ? props.frProjects : props.enProjects
 );
+
+const getImageUrl = (imageName: string) => {
+  return new URL(`../assets/${imageName}`, import.meta.url).href;
+};
 </script>
 
 <template>
@@ -30,7 +34,7 @@ const projects = ref(
           <div class="mb-4">
             <div class="relative mx-auto">
               <img
-                :src="project.data.image"
+                :src="getImageUrl(project.data.image)"
                 :alt="project.data.title"
                 class="w-full rounded"
               />

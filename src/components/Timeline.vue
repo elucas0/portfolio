@@ -21,6 +21,10 @@ const events = ref([
     link: "https://www.master-cde.eu",
   },
 ]);
+
+const getImageUrl = (imageName: string) => {
+  return new URL(`../assets/logo/${imageName}`, import.meta.url).href;
+};
 </script>
 
 <template>
@@ -45,14 +49,14 @@ const events = ref([
           <template #content>
             <img
               v-if="event.item.image"
-              :src="`/assets/logo/${event.item.image}`"
+              :src="getImageUrl(event.item.image)"
               :alt="event.item.name"
               width="200"
               class="rounded-md"
             />
             <img
               v-if="event.index === 1"
-              :src="`/assets/logo/EN Co-funded by the EU_POS.jpg`"
+              src="/assets/logo/EN Co-funded by the EU_POS.jpg"
               width="200"
               class="rounded-md"
             />

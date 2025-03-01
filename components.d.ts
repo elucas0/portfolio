@@ -12,7 +12,6 @@ declare module 'vue' {
     Card: typeof import('primevue/card')['default']
     Divider: typeof import('primevue/divider')['default']
     Header: typeof import('./src/components/Header.vue')['default']
-    Image: typeof import('primevue/image')['default']
     Menubar: typeof import('./src/components/Menubar.vue')['default']
     ProjectsCarousel: typeof import('./src/components/ProjectsCarousel.vue')['default']
     ScrollTop: typeof import('primevue/scrolltop')['default']
