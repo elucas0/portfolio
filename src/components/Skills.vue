@@ -4,7 +4,6 @@ import i18next from "i18next";
 import ProgressBar from "primevue/progressbar";
 import Tag from "primevue/tag";
 
-// Define skill categories and their corresponding skills
 const skillCategories = ref([
   {
     id: "languages",
@@ -74,7 +73,6 @@ const skillCategories = ref([
   },
 ]);
 
-// Function to get skill level text
 const getSkillLevelText = (level: number): string => {
   if (level >= 90) return i18next.language === "fr" ? "Expert" : "Expert";
   if (level >= 80) return i18next.language === "fr" ? "Avancé" : "Advanced";
@@ -83,7 +81,6 @@ const getSkillLevelText = (level: number): string => {
   return i18next.language === "fr" ? "Débutant" : "Beginner";
 };
 
-// Function to get skill level color
 const getSkillLevelColor = (level: number): string => {
   if (level >= 90) return "success";
   if (level >= 80) return "info";
@@ -91,18 +88,9 @@ const getSkillLevelColor = (level: number): string => {
   return "secondary";
 };
 
-// Get the title based on current language
 const getTitle = (category: any): string => {
   return i18next.language === "fr" ? category.titleFr : category.titleEn;
 };
-
-// Animation for skills on mount
-const isVisible = ref(false);
-onMounted(() => {
-  setTimeout(() => {
-    isVisible.value = true;
-  }, 300);
-});
 </script>
 
 <template>
@@ -110,11 +98,7 @@ onMounted(() => {
     <Card
       v-for="category in skillCategories"
       :key="category.id"
-      class="bg-white/50 dark:bg-surface-900 backdrop-blur-md p-4 rounded-xl dark:border dark:border-surface-700 transition-all duration-500"
-      :class="{
-        'opacity-100 translate-y-0': isVisible,
-        'opacity-0 translate-y-4': !isVisible,
-      }"
+      class="bg-white/50 dark:bg-surface-900 p-4 rounded-xl dark:border dark:border-surface-700"
     >
       <template #title>
         {{ getTitle(category) }}

@@ -15,8 +15,10 @@
     "button": "Visit website"
   },
   "projects": {
-    "web": "Web apps",
-    "gis": "GIS & EO",
+    "webTitle": "Web apps",
+    "webSubtitle": "Web applications and tools I have developed or contributed to.",
+    "gisTitle": "GIS & EO",
+    "gisSubtitle": "GIS and Earth Observation projects I have worked on during my studies at the University of Salzburg.",
     "open": "Open repository"
   }
 }

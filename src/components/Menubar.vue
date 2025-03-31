@@ -30,23 +30,18 @@ const items = ref([
     label: i18next.t("menu.projects"),
     items: [
       {
-        label: i18next.t("menu.all"),
-        icon: "pi pi-arrow-right",
-        badge: 3,
+        label: i18next.t("menu.web"),
+        icon: "pi pi-desktop",
         command: () => {
-          scrollToSection(document.getElementById("projects") ?? undefined);
+          scrollToSection(document.getElementById("web-projects") ?? undefined);
         },
       },
       {
-        separator: true,
-      },
-      {
-        label: i18next.t("menu.web"),
-        items: [{}],
-      },
-      {
         label: i18next.t("menu.gis"),
-        items: [{}],
+        icon: "pi pi-globe",
+        command: () => {
+          scrollToSection(document.getElementById("gis-projects") ?? undefined);
+        },
       },
     ],
   },

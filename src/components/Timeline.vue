@@ -8,30 +8,24 @@ import i18next from "i18next";
 <template>
   <div class="card">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
-      <!-- Connection line between cards with icons -->
       <div
         class="hidden md:block absolute h-3/4 w-0.5 bg-white/50 left-1/2 -translate-x-1/2 z-0"
       >
-        <!-- Desktop icon at top -->
         <div
-          class="absolute -top-4 left-1/2 -translate-x-1/2 flex w-8 h-8 items-center justify-center text-white rounded-full z-10 shadow-sm"
-          style="background-color: #9c27b0"
+          class="absolute -top-4 left-1/2 -translate-x-1/2 flex w-8 h-8 items-center justify-center text-white rounded-full z-10 shadow-sm bg-black/50 dark:bg-surface-900"
         >
           <i class="pi pi-desktop"></i>
         </div>
 
-        <!-- Globe icon at bottom -->
         <div
-          class="absolute -bottom-4 left-1/2 -translate-x-1/2 flex w-8 h-8 items-center justify-center text-white rounded-full z-10 shadow-sm"
-          style="background-color: #006d00"
+          class="absolute -bottom-4 left-1/2 -translate-x-1/2 flex w-8 h-8 items-center justify-center text-white rounded-full z-10 shadow-sm bg-black/50 dark:bg-surface-900"
         >
           <i class="pi pi-globe"></i>
         </div>
       </div>
 
-      <!-- Bachelor in Computer Science -->
       <div class="md:pr-12 relative">
-        <Card class="bg-white/50 dark:bg-surface-900 p-4 backdrop-blur-md">
+        <Card class="bg-white/50 dark:bg-surface-900 p-4">
           <template #title> Bachelor in Computer Science </template>
           <template #subtitle> IUT de Vannes 2021-2024 </template>
           <template #content>
@@ -49,7 +43,6 @@ import i18next from "i18next";
                 href="https://www.iutvannes.fr/welcome-to-iut-vannes/"
                 target="_blank"
                 rel="noopener"
-                severity="secondary"
                 iconPos="right"
                 icon="pi pi-arrow-right"
               />
@@ -57,14 +50,8 @@ import i18next from "i18next";
           </template>
         </Card>
       </div>
-
-      <!-- Empty placeholder for first row second column -->
       <div class="hidden md:block"></div>
-
-      <!-- Empty placeholder for second row first column -->
       <div class="hidden md:block"></div>
-
-      <!-- Copernicus Master -->
       <div class="md:pl-12 relative">
         <Card class="bg-white/50 dark:bg-surface-900 p-4 backdrop-blur-md">
           <template #title> Copernicus Master in Digital Earth </template>
@@ -91,7 +78,6 @@ import i18next from "i18next";
                 href="https://www.master-cde.eu"
                 target="_blank"
                 rel="noopener"
-                severity="secondary"
                 iconPos="right"
                 icon="pi pi-arrow-right"
               />
