@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+import { ref } from "vue";
 import i18next from "i18next";
 import ProgressBar from "primevue/progressbar";
 import Tag from "primevue/tag";

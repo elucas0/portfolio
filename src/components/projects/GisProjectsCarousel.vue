@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import { ref } from "vue";
-
 import i18next from "i18next";
 import Carousel from "primevue/carousel";
+import { computed } from "vue";
 
-const projects = {
+const projectsData = {
   geosim: {
     title: "Spatial Simulations",
     description: "Diverse spatial simulations using Gama Platform",
@@ -28,6 +27,16 @@ const projects = {
     status: "Ongoing",
   },
 };
+
+const baseUrl = import.meta.env.BASE_URL || "/portfolio/";
+
+const projects = computed(() => Object.values(projectsData));
+
+const getImagePath = (path: string) => {
+  const formatPath = `${baseUrl}${path}`;
+
+  return formatPath;
+};
 </script>
 
 <template>
@@ -40,35 +49,35 @@ const projects = {
     </template>
     <template #content>
       <Carousel :value="projects" :numVisible="2" :numScroll="1">
-        <template #item="project">
+        <template #item="slotProps">
           <div
             class="bg-white dark:bg-surface-900 border border-surface-200 dark:border-surface-700 rounded-xl m-2 p-4"
           >
-            <div class="mb-4">
+            <div v-if="slotProps.data.image" class="mb-4">
               <div class="relative mx-auto">
                 <img
-                  :src="project.data.image"
-                  :alt="project.data.title"
+                  :src="getImagePath(slotProps.data.image)"
+                  :alt="slotProps.data.title"
                   class="w-full rounded"
                 />
                 <Tag
-                  :value="project.data.status"
+                  :value="slotProps.data.status"
                   class="absolute"
                   style="left: 5px; top: 5px"
                 />
               </div>
             </div>
             <div class="font-medium dark:text-white">
-              {{ project.data.title }}
+              {{ slotProps.data.title }}
             </div>
             <div class="mb-4 font-light dark:text-white">
-              {{ project.data.description }}
+              {{ slotProps.data.description }}
             </div>
             <div class="flex justify-between items-center">
               <span>
                 <Button
                   as="a"
-                  :href="`${project.data.link}`"
+                  :href="`${slotProps.data.link}`"
                   icon="pi pi-github"
                   target="_blank"
                   rel="noopener"

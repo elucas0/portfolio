@@ -7,20 +7,14 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    Badge: typeof import('primevue/badge')['default']
     Button: typeof import('primevue/button')['default']
     Card: typeof import('primevue/card')['default']
     Divider: typeof import('primevue/divider')['default']
     GisProjectsCarousel: typeof import('./src/components/projects/GisProjectsCarousel.vue')['default']
     Header: typeof import('./src/components/Header.vue')['default']
     Menubar: typeof import('./src/components/Menubar.vue')['default']
-    ProjectsCarousel: typeof import('./src/components/ProjectsCarousel.vue')['default']
     ScrollTop: typeof import('primevue/scrolltop')['default']
     Skills: typeof import('./src/components/Skills.vue')['default']
-    Tab: typeof import('primevue/tab')['default']
-    TabList: typeof import('primevue/tablist')['default']
-    TabPanel: typeof import('primevue/tabpanel')['default']
-    TabPanels: typeof import('primevue/tabpanels')['default']
     Tag: typeof import('primevue/tag')['default']
     ThemeToggle: typeof import('./src/components/ThemeToggle.vue')['default']
     Timeline: typeof import('./src/components/Timeline.vue')['default']
