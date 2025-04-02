@@ -1,0 +1,30 @@
+{
+    "geosim": {
+      "title": "Simulations Spatiales",
+      "description": "Diverses simulations spatiales utilisant la plateforme Gama",
+      "status": "Terminé",
+      "image": "/assets/projects/other/matsimlyon.png",
+      "link": "https://github.com/elucas0/land-use-simulation"
+    },
+    "gee": {
+      "title": "Google Earth Engine",
+      "description": "Scripts EO utilisant Google Earth Engine",
+      "status": "En cours",
+      "image": "/assets/projects/other/gee.png",
+      "demo": true
+    },
+    "arcgis": {
+      "title": "ArcGIS Pro",
+      "description": "Scripts EO utilisant ArcGIS Pro",
+      "status": "En cours",
+      "image": "/assets/projects/other/arcgis.png",
+      "demo": true
+    },
+    "qgis": {
+      "title": "QGIS",
+      "description": "Scripts EO utilisant QGIS",
+      "status": "En cours",
+      "image": "/assets/projects/other/qgis.png",
+      "demo": true
+    }
+}

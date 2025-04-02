@@ -10,11 +10,11 @@ const skillCategories = ref([
     titleFr: "Langages de programmation",
     titleEn: "Programming Languages",
     skills: [
-      { name: "JavaScript", level: 95 },
-      { name: "Python", level: 85 },
+      { name: "JavaScript", level: 90 },
+      { name: "Python", level: 80 },
       { name: "C++", level: 60 },
-      { name: "Java", level: 85 },
-      { name: "SQL", level: 90 },
+      { name: "Java", level: 80 },
+      { name: "SQL", level: 80 },
     ],
   },
   {
@@ -22,10 +22,10 @@ const skillCategories = ref([
     titleFr: "Technologies Front-end",
     titleEn: "Front-end Technologies",
     skills: [
-      { name: "React", level: 80 },
+      { name: "React", level: 90 },
       { name: "TailwindCSS", level: 90 },
-      { name: "SCSS/CSS", level: 85 },
-      { name: "Vue.js", level: 75 },
+      { name: "SCSS/CSS", level: 80 },
+      { name: "Vue.js", level: 80 },
     ],
   },
   {
@@ -34,8 +34,8 @@ const skillCategories = ref([
     titleEn: "Back-end Technologies",
     skills: [
       { name: "Node.js", level: 90 },
-      { name: "Express", level: 8 },
-      { name: "NestJS", level: 80 },
+      { name: "Express", level: 70 },
+      { name: "NestJS", level: 60 },
     ],
   },
   {
@@ -43,9 +43,9 @@ const skillCategories = ref([
     titleFr: "Technologies SIG",
     titleEn: "GIS Technologies",
     skills: [
-      { name: "QGIS", level: 65 },
-      { name: "ArcGIS Pro & ArcGIS Online", level: 70 },
-      { name: "PostGIS", level: 70 },
+      { name: "QGIS", level: 80 },
+      { name: "ArcGIS Pro & ArcGIS Online", level: 60 },
+      { name: "PostGIS", level: 50 },
       { name: "Google Earth Engine", level: 50 },
     ],
   },
@@ -65,10 +65,10 @@ const skillCategories = ref([
     titleEn: "Other Skills",
     skills: [
       { name: "UI/UX Design", level: 80 },
-      { name: "Agile/Scrum", level: 85 },
-      { name: "RESTful APIs", level: 90 },
+      { name: "Agile/Scrum", level: 70 },
+      { name: "RESTful APIs", level: 80 },
       { name: "GraphQL", level: 60 },
-      { name: "Machine Learning", level: 70 },
+      { name: "Machine Learning", level: 50 },
     ],
   },
 ]);

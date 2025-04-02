@@ -1,0 +1,30 @@
+{
+  "lpv": {
+    "title": "La Palme Verte",
+    "description": "Blog pour l'association des étudiants de l'UBS",
+    "status": "Terminé",
+    "image": "/assets/projects/web/opengraph-image.jpg",
+    "link": "https://github.com/HeineZo/la-palme-verte"
+  },
+  "pnr": {
+    "title": "Projet PNR",
+    "description": "Application ERP de bureau pour les biologistes bénévoles",
+    "status": "Terminé",
+    "image": "/assets/projects/web/PNR.jpg",
+    "link": "https://github.com/elucas0/SAE-PNR"
+  },
+  "weatherApp": {
+    "title": "Application Météo",
+    "description": "Application météo en Vue utilisant l'API OpenWeather",
+    "status": "Terminé",
+    "image": "/assets/projects/web/weather-app.png",
+    "link": "https://github.com/HeineZo/meteo-app-vue"
+  },
+  "punto": {
+    "title": "Punto",
+    "description": "Version web de Punto pour jouer jusqu'à 4 joueurs. Réalisé lors d'un cours de bases de données.",
+    "status": "Terminé",
+    "image": "/assets/projects/web/punto.png",
+    "link": "https://github.com/elucas0/punto"
+  }
+}

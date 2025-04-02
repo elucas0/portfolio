@@ -1,0 +1,31 @@
+{
+    "lpv": {
+      "title": "La Palme Verte",
+      "description": "Blog for UBS students association",
+      "status": "Completed",
+      "image": "/assets/projects/web/opengraph-image.jpg",
+      "link": "https://github.com/HeineZo/la-palme-verte"
+    },
+    "pnr": {
+      "title": "Projet PNR",
+      "description": "ERP desktop application for volunteer biologists",
+      "status": "Completed",
+      "image": "/assets/projects/web/PNR.jpg",
+      "link": "https://github.com/elucas0/SAE-PNR"
+    },
+    "weatherApp": {
+      "title": "Weather App",
+      "description": "Weather app in Vue using OpenWeather API",
+      "status": "Completed",
+      "image": "/assets/projects/web/weather-app.png",
+      "link": "https://github.com/HeineZo/meteo-app-vue"
+    },
+    "punto": {
+      "title": "Punto",
+      "description": "Punto web version to play with up to 4 players. Made during a database course.",
+      "status": "Completed",
+      "image": "/assets/projects/web/punto.png",
+      "link": "https://github.com/elucas0/punto"
+    }
+  }
+  

@@ -4,13 +4,12 @@ import Divider from "primevue/divider";
 </script>
 
 <template>
-  <div class="flex flex-col sm:flex-row gap-8">
+  <div class="flex flex-col sm:flex-row items-center gap-8">
     <div class="w-1/2 flex justify-center items-center">
       <img
         src="/assets/moi.jpg"
         alt="Photo de profil Elouann"
-        width="450"
-        class="rounded-full border-4"
+        class="rounded-full border-2 border-surface-200 dark:border-surface-700 shadow-lg"
       />
     </div>
     <div class="flex flex-col gap-2">

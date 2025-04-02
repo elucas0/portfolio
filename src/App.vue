@@ -3,29 +3,17 @@ import Dialog from "primevue/dialog";
 import Menubar from "./components/Menubar.vue";
 import Home from "./pages/Home.vue";
 import { ref } from "vue";
+import { DynamicDialog } from "primevue";
 
 const visible = ref(false);
 </script>
 
 <template>
-  <Menubar class="sticky top-5 z-20" />
-  <Home />
-  <Dialog v-model:visible="visible" modal :style="{ width: '30rem' }">
-    <template #header>
-      <div class="inline-flex items-center justify-center gap-2">
-        <span class="pi pi-exclamation-triangle"></span>
-        <span class="font-bold whitespace-nowrap">Warning</span>
-      </div>
-    </template>
-    <div class="flex items-center gap-4 mb-4">
-      <label class="font-semibold"
-        >This portfolio is a work in progress, the content may not be complete
-        or some features may not work properly. Thank you for your patience
-        !</label
-      >
-    </div>
-    <template #footer>
-      <Button label="Ok" @click="visible = false" autofocus />
-    </template>
-  </Dialog>
+  <div
+    class="flex flex-col items-center justify-center min-h-screen pt-6 md:pt-10 gap-8 md:gap-16 mx-auto p-4 sm:p-6 md:max-w-5xl"
+  >
+    <Menubar />
+    <Home />
+    <DynamicDialog />
+  </div>
 </template>
