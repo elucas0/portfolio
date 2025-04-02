@@ -9,21 +9,15 @@ declare module 'vue' {
   export interface GlobalComponents {
     Button: typeof import('primevue/button')['default']
     Card: typeof import('primevue/card')['default']
-    Divider: typeof import('primevue/divider')['default']
-    DynamicDialog: typeof import('primevue/dynamicdialog')['default']
-    GisProjectsCarousel: typeof import('./src/components/projects/GisProjectsCarousel.vue')['default']
     Header: typeof import('./src/components/Header.vue')['default']
-    LanguageToggle: typeof import('./src/components/LanguageToggle.vue')['default']
     Menubar: typeof import('./src/components/Menubar.vue')['default']
     ProjectDialog: typeof import('./src/components/ProjectDialog.vue')['default']
     ProjectsCarousel: typeof import('./src/components/ProjectsCarousel.vue')['default']
-    ScrollTop: typeof import('primevue/scrolltop')['default']
     Skills: typeof import('./src/components/Skills.vue')['default']
     Tag: typeof import('primevue/tag')['default']
     ThemeToggle: typeof import('./src/components/ThemeToggle.vue')['default']
     Timeline: typeof import('./src/components/Timeline.vue')['default']
     ToggleSwitch: typeof import('primevue/toggleswitch')['default']
-    WebProjectsCarousel: typeof import('./src/components/projects/WebProjectsCarousel.vue')['default']
   }
   export interface ComponentCustomProperties {
     Ripple: typeof import('primevue/ripple')['default']

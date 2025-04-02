@@ -60,7 +60,7 @@ const openDialog = (project: Project) => {
 
 <template>
   <Card class="bg-transparent shadow-none">
-    <template #title>
+    <template #title class="bg-white dark:bg-surface-900 rounded-xl p-4">
       {{ props.title }}
     </template>
     <template #subtitle>

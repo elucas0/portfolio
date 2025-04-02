@@ -15,14 +15,14 @@ const getImagePath = (path: string) => {
 
 <template>
   <div class="p-4">
-    <div v-if="project.image" class="mb-4">
+    <div v-if="props.project.image" class="mb-4">
       <img
-        :src="getImagePath(project.image)"
+        :src="getImagePath(props.project.image)"
         :alt="project.title"
         class="w-full rounded"
       />
     </div>
-    <h2 class="text-xl font-bold mb-2">{{ project.title }}</h2>
+    <h2 class="text-xl font-bold mb-2">{{ props.project.title }}</h2>
     <p class="text-gray-600 dark:text-gray-300 mb-4">
       {{ project.description }}
     </p>

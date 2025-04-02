@@ -26,7 +26,7 @@ import ScrollTop from "primevue/scrolltop";
 
   <section class="w-full">
     <Card
-      class="bg-white/50 dark:bg-surface-900 rounded-xl dark:border dark:border-surface-700 shadow-sm"
+      class="bg-white/50 dark:bg-surface-900 rounded-xl dark:border dark:border-surface-700 shadow-sm backdrop-blur-md"
     >
       <template #content>
         <div class="p-2 sm:p-4">

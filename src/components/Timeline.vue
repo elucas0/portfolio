@@ -6,7 +6,7 @@ import i18next from "i18next";
 </script>
 
 <template>
-  <div class="card">
+  <div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
       <div
         class="hidden md:block absolute h-3/4 w-0.5 bg-white/50 left-1/2 -translate-x-1/2 z-0"
@@ -25,7 +25,7 @@ import i18next from "i18next";
       </div>
 
       <div class="md:pr-12 relative">
-        <Card class="bg-white/50 dark:bg-surface-900 p-4">
+        <Card class="bg-white/50 dark:bg-surface-900 p-4 backdrop-blur-md dark:border dark:border-surface-700">
           <template #title> Bachelor in Computer Science </template>
           <template #subtitle> IUT de Vannes 2021-2024 </template>
           <template #content>
@@ -53,7 +53,7 @@ import i18next from "i18next";
       <div class="hidden md:block"></div>
       <div class="hidden md:block"></div>
       <div class="md:pl-12 relative">
-        <Card class="bg-white/50 dark:bg-surface-900 p-4 backdrop-blur-md">
+        <Card class="bg-white/50 dark:bg-surface-900 p-4 backdrop-blur-md dark:border dark:border-surface-700">
           <template #title> Copernicus Master in Digital Earth </template>
           <template #subtitle>
             Paris Lodron Universität Salzburg 2024-

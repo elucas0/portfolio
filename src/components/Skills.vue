@@ -98,7 +98,7 @@ const getTitle = (category: any): string => {
     <Card
       v-for="category in skillCategories"
       :key="category.id"
-      class="bg-white/50 dark:bg-surface-900 p-4 rounded-xl dark:border dark:border-surface-700"
+      class="bg-white/50 dark:bg-surface-900 p-4 rounded-xl dark:border dark:border-surface-700 backdrop-blur-md"
     >
       <template #title>
         {{ getTitle(category) }}
