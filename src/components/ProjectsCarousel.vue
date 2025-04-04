@@ -4,7 +4,7 @@ import { useDialog } from "primevue";
 import Carousel from "primevue/carousel";
 import ProjectDialog from "./ProjectDialog.vue";
 
-import { computed } from "vue";
+import { computed, ref } from "vue";
 
 export interface Project {
   title: string;
@@ -25,6 +25,29 @@ const props = defineProps<{
     [key: string]: Project;
   };
 }>();
+
+const responsiveOptions = ref([
+  {
+    breakpoint: "1400px",
+    numVisible: 2,
+    numScroll: 1,
+  },
+  {
+    breakpoint: "1199px",
+    numVisible: 3,
+    numScroll: 1,
+  },
+  {
+    breakpoint: "767px",
+    numVisible: 2,
+    numScroll: 1,
+  },
+  {
+    breakpoint: "575px",
+    numVisible: 1,
+    numScroll: 1,
+  },
+]);
 
 const projects = computed(() =>
   Object.values(i18next.language === "fr" ? props.frProjects : props.enProjects)
@@ -72,6 +95,7 @@ const openDialog = (project: Project) => {
         :numVisible="2"
         :numScroll="2"
         :circular="true"
+        :responsiveOptions="responsiveOptions"
       >
         <template #item="project">
           <div
