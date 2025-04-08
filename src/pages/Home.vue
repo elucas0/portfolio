@@ -13,6 +13,15 @@ import webProjectsEn from "../locales/web-projects-en.json";
 import ProjectsCarousel from "../components/ProjectsCarousel.vue";
 import Divider from "primevue/divider";
 import ScrollTop from "primevue/scrolltop";
+import { computed } from "vue";
+
+const gisProjects = computed(() =>
+  Object.values(i18next.language === "fr" ? gisProjectsFr : gisProjectsEn)
+);
+
+const webProjects = computed(() =>
+  Object.values(i18next.language === "fr" ? webProjectsFr : webProjectsEn)
+);
 </script>
 
 <template>
@@ -29,23 +38,19 @@ import ScrollTop from "primevue/scrolltop";
       class="bg-white/50 dark:bg-surface-900 rounded-xl dark:border dark:border-surface-700 shadow-sm backdrop-blur-md"
     >
       <template #content>
-        <div class="p-2 sm:p-4">
           <ProjectsCarousel
             id="gis-projects"
             :title="i18next.t('projects.gisTitle')"
             :subtitle="i18next.t('projects.gisSubtitle')"
-            :frProjects="gisProjectsFr"
-            :enProjects="gisProjectsEn"
+            :projects="gisProjects"
           />
           <Divider class="my-4 md:my-6" />
           <ProjectsCarousel
             id="web-projects"
             :title="i18next.t('projects.webTitle')"
             :subtitle="i18next.t('projects.webSubtitle')"
-            :frProjects="webProjectsFr"
-            :enProjects="webProjectsEn"
+            :projects="webProjects"
           />
-        </div>
       </template>
     </Card>
   </section>

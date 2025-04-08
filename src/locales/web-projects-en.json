@@ -1,14 +1,15 @@
 {
     "lpv": {
       "title": "La Palme Verte",
-      "description": "Blog for UBS students association",
+      "description": "Blog for UBS students association using Next.js and Notion API for content management.",
       "status": "Completed",
       "image": "/assets/projects/web/opengraph-image.jpg",
-      "link": "https://github.com/HeineZo/la-palme-verte"
+      "link": "https://github.com/HeineZo/la-palme-verte",
+      "demo": "https://la-palme-verte.vercel.app/"
     },
     "pnr": {
       "title": "Projet PNR",
-      "description": "ERP desktop application for volunteer biologists",
+      "description": "ERP desktop application for volunteer biologists using JavaFX and Java.",
       "status": "Completed",
       "image": "/assets/projects/web/PNR.jpg",
       "link": "https://github.com/elucas0/SAE-PNR"
@@ -22,7 +23,7 @@
     },
     "punto": {
       "title": "Punto",
-      "description": "Punto web version to play with up to 4 players. Made during a database course.",
+      "description": "Punto board game in web version to play with up to 4 players. Made during a database course.",
       "status": "Completed",
       "image": "/assets/projects/web/punto.png",
       "link": "https://github.com/elucas0/punto"

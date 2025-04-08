@@ -1,31 +1,30 @@
 {
-    "geosim": {
-      "title": "Spatial Simulations",
-      "description": "Diverse spatial simulations using Gama Platform",
-      "status": "Completed",
-      "image": "/assets/projects/other/spatialsim.png",
-      "link": "https://github.com/elucas0/land-use-simulation"
-    },
-    "gee": {
-      "title": "Google Earth Engine",
-      "description": "EO scripts using Google Earth Engine",
-      "status": "On-going",
-      "image": "/assets/projects/other/gee.png",
-      "demo" : true
-    },
-    "arcgis": {
-      "title": "ArcGIS Pro",
-      "description": "EO scripts using ArcGIS Pro",
-      "status": "On-going",
-      "image": "/assets/projects/other/arcgis.png",
-      "demo" : true
-    },
-    "qgis": {
-      "title": "QGIS",
-      "description": "EO scripts using QGIS",
-      "status": "On-going",
-      "image": "/assets/projects/other/qgis.png",
-      "demo" : true
-    }
+  "geosim": {
+    "title": "Spatial Simulations",
+    "description": "Diverse spatial simulations using Gama Platform",
+    "status": "Completed",
+    "image": "/assets/projects/other/spatialsim.png",
+    "link": "https://github.com/elucas0/land-use-simulation"
+  },
+  "gee": {
+    "title": "Google Earth Engine",
+    "description": "EO scripts using Google Earth Engine",
+    "status": "On-going",
+    "image": "/assets/projects/other/gee.png",
+    "link": "https://code.earthengine.google.com/?accept_repo=users/elouannlucas56/cde_master"
+  },
+  "arcgis": {
+    "title": "ArcGIS Pro & ArcGIS Online",
+    "description": "Projects using ArcGIS Pro and ArcGIS Online",
+    "status": "On-going",
+    "image": "/assets/projects/other/arcgis.png",
+    "link": "https://arcg.is/1CCD0r0"
+  },
+  "qgis": {
+    "title": "QGIS",
+    "description": "Projects using QGIS and spatial databases (PostgreSQL, PostGIS)",
+    "status": "On-going",
+    "image": "/assets/projects/other/qgis.png",
+    "link": "https://subsequent-ginger-94d.notion.site/Spatial-Databases-Final-Project-1b20928a8c28806698a1f7ae3bbf7c24?pvs=4"
   }
-  
+}

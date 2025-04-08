@@ -23,6 +23,7 @@ import Divider from "primevue/divider";
           icon="pi pi-file-pdf"
           aria-label="Download Europass"
           v-tooltip.bottom="'Open Europass'"
+          class="shadow-lg"
         />
         <Button
           as="a"
@@ -32,6 +33,7 @@ import Divider from "primevue/divider";
           target="_blank"
           rel="noopener"
           v-tooltip.bottom="'Open GitHub profile'"
+          class="shadow-lg"
         />
         <Button
           as="a"
@@ -41,6 +43,7 @@ import Divider from "primevue/divider";
           target="_blank"
           rel="noopener"
           v-tooltip.bottom="'Open LinkedIn profile'"
+          class="shadow-lg"
         />
         <Button
           as="a"
@@ -50,6 +53,7 @@ import Divider from "primevue/divider";
           target="_blank"
           rel="noopener"
           v-tooltip.bottom="'Contact me'"
+          class="shadow-lg"
         />
       </div>
     </div>

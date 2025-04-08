@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import i18next from "i18next";
-import { useDialog } from "primevue";
+import { DynamicDialog, useDialog } from "primevue";
 import Carousel from "primevue/carousel";
 import ProjectDialog from "./ProjectDialog.vue";
 
-import { computed, ref } from "vue";
+import { onMounted, ref } from "vue";
 
 export interface Project {
   title: string;
@@ -18,10 +18,7 @@ export interface Project {
 const props = defineProps<{
   title: string;
   subtitle: string;
-  frProjects: {
-    [key: string]: Project;
-  };
-  enProjects: {
+  projects: {
     [key: string]: Project;
   };
 }>();
@@ -33,25 +30,11 @@ const responsiveOptions = ref([
     numScroll: 1,
   },
   {
-    breakpoint: "1199px",
-    numVisible: 3,
-    numScroll: 1,
-  },
-  {
     breakpoint: "767px",
-    numVisible: 2,
-    numScroll: 1,
-  },
-  {
-    breakpoint: "575px",
     numVisible: 1,
     numScroll: 1,
   },
 ]);
-
-const projects = computed(() =>
-  Object.values(i18next.language === "fr" ? props.frProjects : props.enProjects)
-);
 
 const baseUrl = import.meta.env.BASE_URL || "/portfolio/";
 
@@ -68,12 +51,21 @@ const getProjectStatus = (projectStatus: string) => {
   return "info";
 };
 
+onMounted(() => {
+  console.log("projects", props.projects);
+});
+
 const dialog = useDialog();
 
 const openDialog = (project: Project) => {
-  dialog.open({
-    header: project.title,
-    content: ProjectDialog,
+  dialog.open(ProjectDialog, {
+    props: {
+      header: project.title,
+      closeOnEscape: true,
+      maximizable: true,
+      dismissableMask: true,
+      modal: true,
+    },
     data: {
       project,
     },
@@ -122,12 +114,12 @@ const openDialog = (project: Project) => {
             <div class="mb-4 font-light dark:text-white">
               {{ project.data.description }}
             </div>
-            <div class="flex justify-between items-center">
+            <div class="flex gap-4 items-center">
               <span v-if="project.data.link">
                 <Button
                   as="a"
                   :href="project.data.link"
-                  icon="pi pi-github"
+                  icon="pi pi-eye"
                   target="_blank"
                   rel="noopener"
                   v-tooltip.bottom="i18next.t('projects.open')"
@@ -135,9 +127,9 @@ const openDialog = (project: Project) => {
               </span>
               <span v-if="project.data.demo">
                 <Button
-                  icon="pi pi-eye"
+                  icon="pi pi-bolt"
                   v-tooltip.bottom="i18next.t('projects.demo')"
-                  :onclick="openDialog(project.data)"
+                  @click="openDialog(project.data)"
                 />
               </span>
             </div>
@@ -146,4 +138,5 @@ const openDialog = (project: Project) => {
       </Carousel>
     </template>
   </Card>
+  <DynamicDialog />
 </template>

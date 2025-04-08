@@ -1,49 +1,41 @@
 <script setup lang="ts">
-import { defineProps } from "vue";
-import { Project } from "./ProjectsCarousel.vue";
+import { inject, ref, onMounted } from "vue";
 
-const props = defineProps<{
-  project: Project;
-}>();
+const dialogRef: any = inject("dialogRef");
 
-const baseUrl = import.meta.env.BASE_URL || "/portfolio/";
+const params = ref({
+  title: "",
+  description: "",
+  status: "",
+  image: "",
+  link: "",
+  demo: false,
+});
 
-const getImagePath = (path: string) => {
-  return `${baseUrl}${path}`;
+onMounted(() => {
+  if (dialogRef?.value?.data?.project) {
+    params.value = dialogRef.value.data.project;
+  }
+});
+
+const getProjectStatus = (projectStatus: string) => {
+  const status = projectStatus.toLowerCase();
+  if (status === "completed" || status === "terminé") return "primary";
+  if (status === "on-going" || status === "en cours") return "warn";
+  return "info";
 };
 </script>
 
 <template>
-  <div class="p-4">
-    <div v-if="props.project.image" class="mb-4">
-      <img
-        :src="getImagePath(props.project.image)"
-        :alt="project.title"
-        class="w-full rounded"
-      />
-    </div>
-    <h2 class="text-xl font-bold mb-2">{{ props.project.title }}</h2>
-    <p class="text-gray-600 dark:text-gray-300 mb-4">
-      {{ project.description }}
+  <div class="flex gap-3 align-baseline">
+    <p class="text-gray-600 dark:text-gray-300">
+      {{ params.description }}
     </p>
-    <div class="flex justify-between items-center">
-      <span v-if="project.link">
-        <Button
-          as="a"
-          :href="project.link"
-          icon="pi pi-github"
-          target="_blank"
-          rel="noopener"
-          label="GitHub"
-        />
-      </span>
-      <span v-if="project.demo">
-        <Button
-          icon="pi pi-eye"
-          label="View Demo"
-          @click="$emit('view-demo', project)"
-        />
-      </span>
-    </div>
+    <Tag
+      v-if="params.status"
+      :value="params.status"
+      :severity="getProjectStatus(params.status)"
+      style="left: 5px; top: 5px"
+    />
   </div>
 </template>

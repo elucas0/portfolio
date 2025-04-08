@@ -3,7 +3,6 @@ import Dialog from "primevue/dialog";
 import Menubar from "./components/Menubar.vue";
 import Home from "./pages/Home.vue";
 import { ref } from "vue";
-import { DynamicDialog } from "primevue";
 
 const visible = ref(false);
 </script>
@@ -14,6 +13,5 @@ const visible = ref(false);
   >
     <Menubar />
     <Home />
-    <DynamicDialog />
   </div>
 </template>

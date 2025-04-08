@@ -19,6 +19,7 @@
     "gisSubtitle": "GIS and Earth Observation projects I have worked on during my studies at the University of Salzburg.",
     "webTitle": "Web applications", 
     "webSubtitle": "Web applications and full-stack development projects I have worked on or contributed to.",
-    "open": "Open repository"
+    "open": "Open repository",
+    "demo": "Open demo"
   }
 }
