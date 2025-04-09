@@ -55,7 +55,10 @@ const items = ref([
 </script>
 
 <template>
-  <Menubar :model="items" class="sticky top-5 z-20 w-full bg-white/50 dark:bg-surface-900/50 shadow-sm backdrop-blur-md border-surface-200 dark:border-surface-700">
+  <Menubar
+    :model="items"
+    class="sticky top-5 z-20 w-full bg-white/50 dark:bg-surface-900/50 shadow-sm backdrop-blur-md border-surface-200 dark:border-surface-700" 
+  >
     <template #start>
       <img width="35" height="40" src="/assets/logo/earth-global.svg"
       class="cursor-pointer hover:rotate-1" href="../pages/Home.vue"
@@ -83,16 +86,7 @@ const items = ref([
       </a>
     </template>
     <template #end>
-      <div class="flex items-center gap-3">
-        <Button
-          as="a"
-          href="https://github.com/elucas0/portfolio"
-          icon="pi pi-github"
-          rounded
-          severity="secondary"
-          target="_blank"
-          rel="noopener"
-        />
+      <div class="flex items-center">
         <ThemeToggle />
       </div>
     </template>

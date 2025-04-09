@@ -1,6 +1,18 @@
 {
-  "intro": {
-    "description": "Bonjour ! I am currently a student at the University of Salzburg, Austria in the MSc Copernicus in Digital Earth Program and next year I will be specializing in Geodata Science at the University of Southern Brittany, France."
+  "header": {
+    "description": "Bonjour ! I am currently a student at the University of Salzburg, Austria in the MSc Copernicus in Digital Earth Program and next year I will be specializing in Geodata Science at the University of Southern Brittany, France.",
+    "openCV": "Open CV",
+    "openGithub": "Open GitHub profile",
+    "openLinkedin": "Open LinkedIn profile",
+    "contactMe": "Contact me"
+  },
+  "contactForm": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "success": "Message sent successfully!",
+    "error": "Error sending message."
   },
   "menu": {
     "home": "Home",
@@ -12,14 +24,23 @@
     "skills": "Skills"
   },
   "timeline": {
+    "bachelor": "Bachelor's degree in Computer Science",
+    "bachelorSubtitle": "IUT of Vannes, France (2021-2024)",
+    "master": "Copernicus Master in Digital Earth",
+    "masterSubtitle": "University of Salzburg, Austria and UBS Vannes, France (2024-2026)",
     "button": "Visit website"
   },
   "projects": {
     "gisTitle": "GIS & Earth Observation projects",
     "gisSubtitle": "GIS and Earth Observation projects I have worked on during my studies at the University of Salzburg.",
-    "webTitle": "Web applications", 
+    "webTitle": "Web applications",
     "webSubtitle": "Web applications and full-stack development projects I have worked on or contributed to.",
     "open": "Open repository",
     "demo": "Open demo"
+  },
+  "footer" : {
+    "copyright": "All rights reserved",
+    "createdBy": "Created by Elouann from 🌍",
+    "openRepository" : "Open portfolio repository"
   }
 }

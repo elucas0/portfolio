@@ -5,6 +5,7 @@ import Image from "primevue/image";
 import i18next from "i18next";
 import Header from "../components/Header.vue";
 import Skills from "../components/Skills.vue";
+import Footer from "../components/Footer.vue";
 import Tabs from "primevue/tabs";
 import gisProjectsFr from "../locales/gis-projects-fr.json";
 import gisProjectsEn from "../locales/gis-projects-en.json";
@@ -16,11 +17,11 @@ import ScrollTop from "primevue/scrolltop";
 import { computed } from "vue";
 
 const gisProjects = computed(() =>
-  Object.values(i18next.language === "fr" ? gisProjectsFr : gisProjectsEn)
+  Object.values(i18next.language === "fr-FR" ? gisProjectsFr : gisProjectsEn)
 );
 
 const webProjects = computed(() =>
-  Object.values(i18next.language === "fr" ? webProjectsFr : webProjectsEn)
+  Object.values(i18next.language === "fr-FR" ? webProjectsFr : webProjectsEn)
 );
 </script>
 
@@ -38,25 +39,28 @@ const webProjects = computed(() =>
       class="bg-white/50 dark:bg-surface-900 rounded-xl dark:border dark:border-surface-700 shadow-sm backdrop-blur-md"
     >
       <template #content>
-          <ProjectsCarousel
-            id="gis-projects"
-            :title="i18next.t('projects.gisTitle')"
-            :subtitle="i18next.t('projects.gisSubtitle')"
-            :projects="gisProjects"
-          />
-          <Divider class="my-4 md:my-6" />
-          <ProjectsCarousel
-            id="web-projects"
-            :title="i18next.t('projects.webTitle')"
-            :subtitle="i18next.t('projects.webSubtitle')"
-            :projects="webProjects"
-          />
+        <ProjectsCarousel
+          id="gis-projects"
+          :title="i18next.t('projects.gisTitle')"
+          :subtitle="i18next.t('projects.gisSubtitle')"
+          :projects="gisProjects"
+        />
+        <Divider class="my-4 md:my-6" />
+        <ProjectsCarousel
+          id="web-projects"
+          :title="i18next.t('projects.webTitle')"
+          :subtitle="i18next.t('projects.webSubtitle')"
+          :projects="webProjects"
+        />
       </template>
     </Card>
   </section>
 
   <section id="skills" class="w-full">
     <Skills />
+  </section>
+  <section class="w-full">
+    <Footer />
   </section>
   <ScrollTop />
 </template>

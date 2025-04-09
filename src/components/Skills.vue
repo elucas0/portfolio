@@ -74,11 +74,11 @@ const skillCategories = ref([
 ]);
 
 const getSkillLevelText = (level: number): string => {
-  if (level >= 90) return i18next.language === "fr" ? "Expert" : "Expert";
-  if (level >= 80) return i18next.language === "fr" ? "Avancé" : "Advanced";
+  if (level >= 90) return i18next.language === "fr-FR" ? "Expert" : "Expert";
+  if (level >= 80) return i18next.language === "fr-FR" ? "Avancé" : "Advanced";
   if (level >= 70)
-    return i18next.language === "fr" ? "Intermédiaire" : "Intermediate";
-  return i18next.language === "fr" ? "Débutant" : "Beginner";
+    return i18next.language === "fr-FR" ? "Intermédiaire" : "Intermediate";
+  return i18next.language === "fr-FR" ? "Débutant" : "Beginner";
 };
 
 const getSkillLevelColor = (level: number): string => {
@@ -89,7 +89,7 @@ const getSkillLevelColor = (level: number): string => {
 };
 
 const getTitle = (category: any): string => {
-  return i18next.language === "fr" ? category.titleFr : category.titleEn;
+  return i18next.language === "fr-FR" ? category.titleFr : category.titleEn;
 };
 </script>
 

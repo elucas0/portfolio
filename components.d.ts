@@ -9,9 +9,9 @@ declare module 'vue' {
   export interface GlobalComponents {
     Button: typeof import('primevue/button')['default']
     Card: typeof import('primevue/card')['default']
-    Carousel: typeof import('primevue/carousel')['default']
-    DynamicDialog: typeof import('primevue/dynamicdialog')['default']
-    GeeProject: typeof import('./src/components/projectDemo/GeeProject.vue')['default']
+    ContactForm: typeof import('./src/components/ContactForm.vue')['default']
+    Divider: typeof import('primevue/divider')['default']
+    Footer: typeof import('./src/components/Footer.vue')['default']
     Header: typeof import('./src/components/Header.vue')['default']
     Menubar: typeof import('./src/components/Menubar.vue')['default']
     ProjectDialog: typeof import('./src/components/ProjectDialog.vue')['default']

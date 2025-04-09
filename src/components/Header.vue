@@ -1,6 +1,23 @@
 <script setup lang="ts">
 import i18next from "i18next";
+import { useDialog } from "primevue";
 import Divider from "primevue/divider";
+// import ContactForm from "./ContactForm.vue";
+
+const dialog = useDialog();
+
+const openContactForm = () => {
+  //   dialog.open(ContactForm, {
+  //     header: i18next.t("header.contactMe"),
+  //     closeOnEscape: true,
+  //     dismissableMask: true,
+  //   });
+};
+
+const cvTooltip = i18next.t("header.openCV");
+const githubTooltip = i18next.t("header.openGithub");
+const linkedinTooltip = i18next.t("header.openLinkedin");
+const emailTooltip = i18next.t("header.contactMe");
 </script>
 
 <template>
@@ -14,45 +31,44 @@ import Divider from "primevue/divider";
     </div>
     <div class="flex flex-col gap-2">
       <h1 class="text-5xl font-extrabold dark:text-white">Elouann Lucas</h1>
-      <p class="dark:text-white">{{ i18next.t("intro.description") }}</p>
+      <p class="dark:text-white">{{ i18next.t("header.description") }}</p>
       <Divider />
       <div class="flex gap-4">
         <Button
           as="a"
-          onclick="window.open('/europass_elouann_lucas.pdf')"
+          onclick="window.open('./europass_elouann_lucas.pdf')"
           icon="pi pi-file-pdf"
-          aria-label="Download Europass"
-          v-tooltip.bottom="'Open Europass'"
+          aria-label="{{ i18next.t('header.openCV') }}"
+          v-tooltip.bottom="cvTooltip"
           class="shadow-lg"
         />
         <Button
           as="a"
           href="https://github.com/elucas0"
           icon="pi pi-github"
-          aria-label="Open GitHub profile"
+          aria-label="{{ i18next.t('header.openGithub') }}"
           target="_blank"
           rel="noopener"
-          v-tooltip.bottom="'Open GitHub profile'"
+          v-tooltip.bottom="githubTooltip"
           class="shadow-lg"
         />
         <Button
           as="a"
           href="https://www.linkedin.com/in/elouann-lucas/"
           icon="pi pi-linkedin"
-          aria-label="Open LinkedIn profile"
+          aria-label="{{ i18next.t('header.openLinkedin') }}"
           target="_blank"
           rel="noopener"
-          v-tooltip.bottom="'Open LinkedIn profile'"
+          v-tooltip.bottom="linkedinTooltip"
           class="shadow-lg"
         />
         <Button
           as="a"
-          href="mailto:elucas56@protonmail.com"
+          href="mailto:elouannlucas56@gmail.com"
           icon="pi pi-envelope"
-          aria-label="Send email"
-          target="_blank"
-          rel="noopener"
-          v-tooltip.bottom="'Contact me'"
+          aria-label="`{{ i18next.t('header.copyEmail') }}`"
+          v-tooltip.bottom="emailTooltip"
+          @click="openContactForm"
           class="shadow-lg"
         />
       </div>

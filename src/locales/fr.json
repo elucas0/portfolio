@@ -1,6 +1,18 @@
 {
-  "intro": {
-    "description": "Étudiant au Master Copernicus Terre Numérique"
+  "header": {
+    "description": "Hello ! Je suis actuellement étudiant à l'Université de Salzbourg en Autriche dans le programme MSc Copernicus in Digital Earth et l'année prochaine je me spécialiserai en Sciences des Géodonnées à l'Université Bretagne Sud, en France.",
+    "openCV": "Ouvrir le CV",
+    "openGithub": "Ouvrir le profil GitHub",
+    "openLinkedin": "Ouvrir le profil LinkedIn",
+    "contactMe": "Me contacter"
+  },
+  "contactForm": {
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "send": "Envoyer",
+    "success": "Message envoyé avec succès !",
+    "error": "Erreur lors de l'envoi du message."
   },
   "menu": {
     "home": "Accueil",
@@ -12,14 +24,23 @@
     "skills": "Compétences"
   },
   "timeline": {
+    "bachelor": "Bachelor Universitaire Technique en Informatique",
+    "bachelorSubtitle": "IUT de Vannes, France (2021-2024)",
+    "master": "Master Copernicus en Terre Numérique",
+    "masterSubtitle": "Université de Salzbourg, Autriche et UBS Vannes, France (2024-2026)",
     "button": "Ouvrir le site"
   },
   "projects": {
     "gisTitle": "Projets SIG & Observation terrestre",
-    "gistSubtitle": "Mes projets de développement SIG et d'analyse de données géographiques",
+    "gisSubtitle": "Mes projets de développement SIG et d'analyse de données géographiques",
     "webTitle": "Projets d'applications web",
     "webSubtitle": "Mes projets d'applications web et de développement full-stack",
     "open": "Ouvrir le dépôt",
     "demo": "Ouvrir la démo"
+  },
+  "footer" : {
+    "copyright": "Tous droits réservés",
+    "createdBy": "Créé par Elouann depuis la 🌍",
+    "openRepository" : "Ouvrir le dépôt du portfolio"
   }
 }

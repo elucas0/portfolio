@@ -4,7 +4,8 @@
     "description": "Blog pour l'association des étudiants de l'UBS",
     "status": "Terminé",
     "image": "/assets/projects/web/opengraph-image.jpg",
-    "link": "https://github.com/HeineZo/la-palme-verte"
+    "link": "https://github.com/HeineZo/la-palme-verte",
+    "demo": "https://la-palme-verte.vercel.app/"
   },
   "pnr": {
     "title": "Projet PNR",

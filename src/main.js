@@ -6,9 +6,10 @@ import PrimeVue from "primevue/config";
 
 import "./tailwind.css";
 import "./style.css"
-import { DialogService } from "primevue";
+import { DialogService, ToastService } from "primevue";
 
 const app = i18n(createApp(App));
 app.use(PrimeVue, { theme: "none" });
 app.use(DialogService)
+app.use(ToastService)
 app.mount("#app")

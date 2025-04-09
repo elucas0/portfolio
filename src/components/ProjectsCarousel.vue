@@ -4,7 +4,7 @@ import { DynamicDialog, useDialog } from "primevue";
 import Carousel from "primevue/carousel";
 import ProjectDialog from "./ProjectDialog.vue";
 
-import { onMounted, ref } from "vue";
+import { ref } from "vue";
 
 export interface Project {
   title: string;
@@ -50,10 +50,6 @@ const getProjectStatus = (projectStatus: string) => {
   if (status === "on-going" || status === "en cours") return "warn";
   return "info";
 };
-
-onMounted(() => {
-  console.log("projects", props.projects);
-});
 
 const dialog = useDialog();
 
