@@ -1,7 +1,21 @@
 {
+  "arcgis": {
+    "title": "Salzburg Tourist Attractions Network Analysis",
+    "description": "Network analysis of tourist attractions in Salzburg using ArcGIS Online",
+    "status": "Completed",
+    "image": "/assets/projects/other/arcgis.png",
+    "demo": "https://arcg.is/1CCD0r0"
+  },
+  "qgis": {
+    "title": "Festival database modeling",
+    "description": "Modeling of a festival database using QGIS and spatial databases (PostgreSQL, PostGIS)",
+    "status": "Completed",
+    "image": "/assets/projects/other/qgis.png",
+    "link": "https://subsequent-ginger-94d.notion.site/Spatial-Databases-Final-Project-1b20928a8c28806698a1f7ae3bbf7c24?pvs=4"
+  },
   "geosim": {
-    "title": "Spatial Simulations",
-    "description": "Diverse spatial simulations using Gama Platform",
+    "title": "Land-use simulation",
+    "description": "Land-use transition simulation with transition matrix and cellular automata using Gama platform",
     "status": "Completed",
     "image": "/assets/projects/other/spatialsim.png",
     "link": "https://github.com/elucas0/land-use-simulation"
@@ -9,22 +23,8 @@
   "gee": {
     "title": "Google Earth Engine",
     "description": "EO scripts using Google Earth Engine",
-    "status": "On-going",
+    "status": "Completed",
     "image": "/assets/projects/other/gee.png",
     "link": "https://code.earthengine.google.com/?accept_repo=users/elouannlucas56/cde_master"
-  },
-  "arcgis": {
-    "title": "ArcGIS Pro & ArcGIS Online",
-    "description": "Projects using ArcGIS Pro and ArcGIS Online",
-    "status": "On-going",
-    "image": "/assets/projects/other/arcgis.png",
-    "link": "https://arcg.is/1CCD0r0"
-  },
-  "qgis": {
-    "title": "QGIS",
-    "description": "Projects using QGIS and spatial databases (PostgreSQL, PostGIS)",
-    "status": "On-going",
-    "image": "/assets/projects/other/qgis.png",
-    "link": "https://subsequent-ginger-94d.notion.site/Spatial-Databases-Final-Project-1b20928a8c28806698a1f7ae3bbf7c24?pvs=4"
   }
 }

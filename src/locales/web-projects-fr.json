@@ -23,7 +23,7 @@
   },
   "punto": {
     "title": "Punto",
-    "description": "Version web de Punto pour jouer jusqu'à 4 joueurs. Réalisé lors d'un cours de bases de données.",
+    "description": "Version web de Punto pour jouer jusqu'à 4 joueurs.",
     "status": "Terminé",
     "image": "/assets/projects/web/punto.png",
     "link": "https://github.com/elucas0/punto"

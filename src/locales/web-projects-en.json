@@ -23,7 +23,7 @@
     },
     "punto": {
       "title": "Punto",
-      "description": "Punto board game in web version to play with up to 4 players. Made during a database course.",
+      "description": "Punto board game in web version to play with up to 4 players.",
       "status": "Completed",
       "image": "/assets/projects/web/punto.png",
       "link": "https://github.com/elucas0/punto"

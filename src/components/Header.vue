@@ -1,10 +1,7 @@
 <script setup lang="ts">
 import i18next from "i18next";
-import { useDialog } from "primevue";
 import Divider from "primevue/divider";
 // import ContactForm from "./ContactForm.vue";
-
-const dialog = useDialog();
 
 const openContactForm = () => {
   //   dialog.open(ContactForm, {

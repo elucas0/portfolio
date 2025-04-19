@@ -7,10 +7,7 @@ import ThemeToggle from "./ThemeToggle.vue";
 import i18next from "i18next";
 
 const scrollToSection = (element?: HTMLElement) => {
-  element?.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-  });
+  element?.scrollIntoView();
 };
 
 const items = ref([
@@ -30,17 +27,17 @@ const items = ref([
     label: i18next.t("menu.projects"),
     items: [
       {
-        label: i18next.t("menu.web"),
-        icon: "pi pi-desktop",
-        command: () => {
-          scrollToSection(document.getElementById("web-projects") ?? undefined);
-        },
-      },
-      {
         label: i18next.t("menu.gis"),
         icon: "pi pi-globe",
         command: () => {
           scrollToSection(document.getElementById("gis-projects") ?? undefined);
+        },
+      },
+      {
+        label: i18next.t("menu.web"),
+        icon: "pi pi-desktop",
+        command: () => {
+          scrollToSection(document.getElementById("web-projects") ?? undefined);
         },
       },
     ],
@@ -57,7 +54,7 @@ const items = ref([
 <template>
   <Menubar
     :model="items"
-    class="sticky top-5 z-20 w-full bg-white/50 dark:bg-surface-900/50 shadow-sm backdrop-blur-md border-surface-200 dark:border-surface-700" 
+    class="sticky top-5 z-20 w-full bg-white/50 dark:bg-surface-900/50 shadow-sm backdrop-blur-md border-surface-200 dark:border-surface-700"
   >
     <template #start>
       <img width="35" height="40" src="/assets/logo/earth-global.svg"

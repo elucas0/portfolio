@@ -11,7 +11,7 @@ const emailTooltip = i18next.t("header.contactMe");
 <template>
   <footer>
     <div
-      class="flex flex-col md:flex-row justify-between items-center rounded-t-lg px-8 pt-6 pb-4 bg-white/50 dark:bg-surface-900 backdrop-blur-md dark:border-t dark:border-l dark:border-r dark:border-surface-700"
+      class="flex flex-col md:flex-row justify-between items-center rounded-t-lg px-8 pt-6 pb-4 bg-white dark:bg-surface-900 backdrop-blur-md dark:border-t dark:border-l dark:border-r dark:border-surface-700"
     >
       <div
         class="flex flex-col items-center md:items-start gap-1 text-sm text-gray-600 dark:text-gray-400"

@@ -12,7 +12,7 @@ export interface Project {
   status: string;
   image?: string;
   link?: string;
-  demo?: boolean;
+  demo?: string;
 }
 
 const props = defineProps<{
@@ -61,6 +61,14 @@ const openDialog = (project: Project) => {
       maximizable: true,
       dismissableMask: true,
       modal: true,
+      draggable: false,
+      style: {
+        width: "50vw",
+      },
+      breakpoints: {
+        "960px": "75vw",
+        "640px": "90vw",
+      },
     },
     data: {
       project,
@@ -81,7 +89,7 @@ const openDialog = (project: Project) => {
       <Carousel
         :value="projects"
         :numVisible="2"
-        :numScroll="2"
+        :numScroll="1"
         :circular="true"
         :responsiveOptions="responsiveOptions"
       >
@@ -91,11 +99,13 @@ const openDialog = (project: Project) => {
           >
             <div v-if="project.data.image" class="mb-4">
               <div class="relative mx-auto">
-                <img
-                  :src="getImagePath(project.data.image)"
-                  :alt="project.data.title"
-                  class="w-full rounded"
-                />
+                <div class="w-full h-48 overflow-hidden">
+                  <img
+                    :src="getImagePath(project.data.image)"
+                    :alt="project.data.title"
+                    class="w-full h-full object-cover rounded"
+                  />
+                </div>
                 <Tag
                   :value="project.data.status"
                   :severity="getProjectStatus(project.data.status)"
@@ -115,7 +125,7 @@ const openDialog = (project: Project) => {
                 <Button
                   as="a"
                   :href="project.data.link"
-                  icon="pi pi-eye"
+                  icon="pi pi-external-link"
                   target="_blank"
                   rel="noopener"
                   v-tooltip.bottom="i18next.t('projects.open')"

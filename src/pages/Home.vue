@@ -39,19 +39,22 @@ const webProjects = computed(() =>
       class="bg-white/50 dark:bg-surface-900 rounded-xl dark:border dark:border-surface-700 shadow-sm backdrop-blur-md"
     >
       <template #content>
-        <ProjectsCarousel
-          id="gis-projects"
-          :title="i18next.t('projects.gisTitle')"
-          :subtitle="i18next.t('projects.gisSubtitle')"
-          :projects="gisProjects"
-        />
+        <section id="gis-projects">
+          <ProjectsCarousel
+            id="gis-projects"
+            :title="i18next.t('projects.gisTitle')"
+            :subtitle="i18next.t('projects.gisSubtitle')"
+            :projects="gisProjects"
+          />
+        </section>
         <Divider class="my-4 md:my-6" />
-        <ProjectsCarousel
-          id="web-projects"
-          :title="i18next.t('projects.webTitle')"
-          :subtitle="i18next.t('projects.webSubtitle')"
-          :projects="webProjects"
-        />
+        <section id="web-projects">
+          <ProjectsCarousel
+            :title="i18next.t('projects.webTitle')"
+            :subtitle="i18next.t('projects.webSubtitle')"
+            :projects="webProjects"
+          />
+        </section>
       </template>
     </Card>
   </section>
