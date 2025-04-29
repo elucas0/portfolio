@@ -3,28 +3,36 @@
     "title": "Salzburg Tourist Attractions Network Analysis",
     "description": "Network analysis of tourist attractions in Salzburg using ArcGIS Online",
     "status": "Completed",
-    "image": "/assets/projects/other/arcgis.png",
+    "image": "/assets/projects/gis/arcgis.png",
     "demo": "https://arcg.is/1CCD0r0"
   },
   "qgis": {
     "title": "Festival database modeling",
     "description": "Modeling of a festival database using QGIS and spatial databases (PostgreSQL, PostGIS)",
     "status": "Completed",
-    "image": "/assets/projects/other/qgis.png",
+    "image": "/assets/projects/gis/qgis.png",
     "link": "https://subsequent-ginger-94d.notion.site/Spatial-Databases-Final-Project-1b20928a8c28806698a1f7ae3bbf7c24?pvs=4"
   },
   "geosim": {
-    "title": "Land-use simulation",
-    "description": "Land-use transition simulation with transition matrix and cellular automata using Gama platform",
+    "title": "Spatial simulations",
+    "description": "Various spatial simulations using cellular automata and agent-based modeling (Gama)",
     "status": "Completed",
-    "image": "/assets/projects/other/spatialsim.png",
-    "link": "https://github.com/elucas0/land-use-simulation"
+    "image": "/assets/projects/gis/spatialsim.png",
+    "link": "https://github.com/elucas0/spatial-simulations"
+  },
+  "eobrowser": {
+    "title": "EO Browser custom script",
+    "description": "Custom script for EO Browser to visualize burned areas in the Monts d'Arrée after the 2022 fire using Sentinel-2 data",
+    "status": "Completed",
+    "image": "/assets/projects/gis/eobrowser.png",
+    "link": "https://subsequent-ginger-94d.notion.site/EO-Browser-Custom-Scripting-1360928a8c28804fb44ec160ed453248?pvs=4"
   },
   "gee": {
     "title": "Google Earth Engine",
     "description": "EO scripts using Google Earth Engine",
     "status": "Completed",
-    "image": "/assets/projects/other/gee.png",
+    "image": "/assets/projects/gis/gee.png",
     "link": "https://code.earthengine.google.com/?accept_repo=users/elouannlucas56/cde_master"
   }
+
 }

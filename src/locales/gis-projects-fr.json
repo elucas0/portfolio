@@ -3,7 +3,7 @@
     "title": "ArcGIS Pro",
     "description": "Projets utilisant ArcGIS Pro ou ArcGIS Online",
     "status": "En cours",
-    "image": "/assets/projects/other/arcgis.png",
+    "image": "/assets/projects/gis/arcgis.png",
     "link": "https://arcg.is/1CCD0r0",
     "demo": "https://arcg.is/1CCD0r0"
   },
@@ -11,21 +11,28 @@
     "title": "Modélisation de base de données de festival",
     "description": "Modélisation d'une base de données de festival utilisant QGIS et des bases de données spatiales (PostgreSQL, PostGIS)",
     "status": "Terminé",
-    "image": "/assets/projects/other/qgis.png",
+    "image": "/assets/projects/gis/qgis.png",
     "link": "https://subsequent-ginger-94d.notion.site/Spatial-Databases-Final-Project-1b20928a8c28806698a1f7ae3bbf7c24?pvs=4"
   },
   "geosim": {
-    "title": "Simulation d'occupation des sols",
-    "description": "Simulation de transition d'occupation des sols avec matrice de transition et automates cellulaires utilisant Gama Platform",
+    "title": "Simulation spatiales",
+    "description": "Diverses simulations spatiales utilisant des automates cellulaires et des modélisations basées sur des agents (Gama)",
     "status": "Terminé",
-    "image": "/assets/projects/other/spatialsim.png",
-    "link": "https://github.com/elucas0/land-use-simulation"
+    "image": "/assets/projects/gis/spatialsim.png",
+    "link": "https://github.com/elucas0/spatial-simulations"
+  },
+  "eobrowser": {
+    "title": "Script EO Browser",
+    "description": "Script personnalisé pour EO Browser pour visualiser les zones brûlées dans les Monts d'Arrée après l'incendie de 2022 utilisant les données Sentinel-2",
+    "status": "Terminé",
+    "image": "/assets/projects/gis/eobrowser.png",
+    "link": "https://subsequent-ginger-94d.notion.site/EO-Browser-Custom-Scripting-1360928a8c28804fb44ec160ed453248?pvs=4"
   },
   "gee": {
     "title": "Google Earth Engine",
     "description": "Scripts EO utilisant Google Earth Engine",
     "status": "En cours",
-    "image": "/assets/projects/other/gee.png",
+    "image": "/assets/projects/gis/gee.png",
     "link": "https://code.earthengine.google.com/?accept_repo=users/elouannlucas56/cde_master"
   }
 }

@@ -58,7 +58,7 @@ const items = ref([
   >
     <template #start>
       <img width="35" height="40" src="/assets/logo/earth-global.svg"
-      class="cursor-pointer hover:rotate-1" href="../pages/Home.vue"
+      class="cursor-pointer rotating-globe" href="../pages/Home.vue"
     </template>
     <template #item="{ item, props, hasSubmenu, root }">
       <a v-ripple class="flex items-center" v-bind="props.action">
@@ -89,3 +89,19 @@ const items = ref([
     </template>
   </Menubar>
 </template>
+
+<style lang="css" scoped>
+.rotating-globe {
+  animation: rotate 45s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+</style>

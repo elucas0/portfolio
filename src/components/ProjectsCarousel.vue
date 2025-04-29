@@ -4,7 +4,7 @@ import { DynamicDialog, useDialog } from "primevue";
 import Carousel from "primevue/carousel";
 import ProjectDialog from "./ProjectDialog.vue";
 
-import { ref } from "vue";
+import { computed, ref } from "vue";
 
 export interface Project {
   title: string;
@@ -43,6 +43,10 @@ const getImagePath = (path: string) => {
 
   return formatPath;
 };
+
+const showNavigators = computed(() => {
+  return !(window.innerWidth < 768);
+});
 
 const getProjectStatus = (projectStatus: string) => {
   const status = projectStatus.toLowerCase();
@@ -92,6 +96,7 @@ const openDialog = (project: Project) => {
         :numScroll="1"
         :circular="true"
         :responsiveOptions="responsiveOptions"
+        :showNavigators="showNavigators"
       >
         <template #item="project">
           <div
