@@ -18,12 +18,6 @@ const items = ref([
     },
   },
   {
-    label: i18next.t("menu.timeline"),
-    command: () => {
-      scrollToSection(document.getElementById("timeline") ?? undefined);
-    },
-  },
-  {
     label: i18next.t("menu.projects"),
     items: [
       {
@@ -41,6 +35,12 @@ const items = ref([
         },
       },
     ],
+  },
+  {
+    label: i18next.t("menu.timeline"),
+    command: () => {
+      scrollToSection(document.getElementById("timeline") ?? undefined);
+    },
   },
   {
     label: i18next.t("menu.skills"),

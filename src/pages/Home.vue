@@ -30,14 +30,8 @@ const webProjects = computed(() =>
     <Header />
   </section>
 
-  <section id="timeline" class="w-full">
-    <Timeline />
-  </section>
-
   <section class="w-full">
-    <Card
-      class="bg-white/50 dark:bg-surface-900 rounded-xl dark:border dark:border-surface-700 shadow-sm backdrop-blur-md"
-    >
+    <Card class="p-0">
       <template #content>
         <section id="gis-projects">
           <ProjectsCarousel
@@ -57,6 +51,10 @@ const webProjects = computed(() =>
         </section>
       </template>
     </Card>
+  </section>
+
+  <section id="timeline" class="w-full">
+    <Timeline />
   </section>
 
   <section id="skills" class="w-full">

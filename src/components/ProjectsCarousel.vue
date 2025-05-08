@@ -82,8 +82,8 @@ const openDialog = (project: Project) => {
 </script>
 
 <template>
-  <Card class="bg-transparent shadow-none">
-    <template #title class="bg-white dark:bg-surface-900 rounded-xl p-4">
+  <Card class="bg-transparent backdrop-blur-none bg-none shadow-none p-0 border-none">
+    <template #title>
       {{ props.title }}
     </template>
     <template #subtitle>
@@ -114,7 +114,7 @@ const openDialog = (project: Project) => {
                 <Tag
                   :value="project.data.status"
                   :severity="getProjectStatus(project.data.status)"
-                  class="absolute"
+                  class="absolute dark:bg-primary-500 dark:text-primary-100"
                   style="left: 5px; top: 5px"
                 />
               </div>

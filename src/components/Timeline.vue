@@ -25,9 +25,7 @@ import i18next from "i18next";
       </div>
 
       <div class="md:pr-12 relative">
-        <Card
-          class="bg-white/50 dark:bg-surface-900 p-4 backdrop-blur-md dark:border dark:border-surface-700"
-        >
+        <Card>
           <template #title>{{ i18next.t("timeline.bachelor") }}</template>
           <template #subtitle>
             {{ i18next.t("timeline.bachelorSubtitle") }}
@@ -57,9 +55,7 @@ import i18next from "i18next";
       <div class="hidden md:block"></div>
       <div class="hidden md:block"></div>
       <div class="md:pl-12 relative">
-        <Card
-          class="bg-white/50 dark:bg-surface-900 p-4 backdrop-blur-md dark:border dark:border-surface-700"
-        >
+        <Card>
           <template #title>{{ i18next.t("timeline.master") }}</template>
           <template #subtitle>
             {{ i18next.t("timeline.masterSubtitle") }}
