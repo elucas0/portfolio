@@ -1,4 +1,11 @@
 {
+  "torchgeo": {
+    "title": "TorchGeo",
+    "description": "Implementation of TorchGeo models for fast inference on satellite imagery",
+    "status": "On-going",
+    "image": "/assets/projects/gis/torchgeo.png",
+    "link": "https://github.com/python-amazing/python-final-project"
+  },
   "arcgis": {
     "title": "Salzburg Tourist Attractions Network Analysis",
     "description": "Network analysis of tourist attractions in Salzburg using ArcGIS Online",
@@ -34,5 +41,4 @@
     "image": "/assets/projects/gis/gee.png",
     "link": "https://code.earthengine.google.com/?accept_repo=users/elouannlucas56/cde_master"
   }
-
 }

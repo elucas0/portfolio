@@ -2,7 +2,6 @@
     @apply flex flex-col rounded-xl
         p-4
         bg-surface-0/50 dark:bg-surface-900
-        bg-[url('/assets/nnnoise.svg')] dark:bg-none bg-repeat
         text-surface-700 dark:text-surface-0
         backdrop-blur-md dark:border dark:border-surface-700
         shadow-[0_1px_3px_0_rgba(0,0,0,0.1),0_1px_2px_-1px_rgba(0,0,0,0.1)]

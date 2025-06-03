@@ -1,4 +1,11 @@
 {
+  "torchgeo": {
+    "title": "TorchGeo",
+    "description": "Implémentation des modèles TorchGeo pour une inférence rapide sur les images satellites",
+    "status": "En cours",
+    "image": "/assets/projects/gis/torchgeo.png",
+    "link": "https://github.com/python-amazing/python-final-project"
+  },
   "arcgis": {
     "title": "ArcGIS Pro",
     "description": "Projets utilisant ArcGIS Pro ou ArcGIS Online",
