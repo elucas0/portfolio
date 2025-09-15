@@ -1,4 +1,11 @@
 {
+  "excursion": {
+    "title": "Excursion à l'EODC et à l'UBA",
+    "description": "Rapport d'une excursion de groupe lors du cours Copernicus Hubs and Institutions",
+    "status": "Terminé",
+    "image": "/assets/projects/gis/excursion.jpg",
+    "link": "https://docs.google.com/document/d/1IIq9mhIE5AcdCeNOhpCrI4pue0TaC7qotVd8LXYLDO4/edit?usp=sharing"
+  },
   "torchgeo": {
     "title": "TorchGeo",
     "description": "Implémentation des modèles TorchGeo pour une inférence rapide sur les images satellites",

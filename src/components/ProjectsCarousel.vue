@@ -97,10 +97,11 @@ const openDialog = (project: Project) => {
         :circular="true"
         :responsiveOptions="responsiveOptions"
         :showNavigators="showNavigators"
+        class="mt-4"
       >
         <template #item="project">
           <div
-            class="bg-white dark:bg-surface-900 border border-surface-200 dark:border-surface-700 rounded-xl m-2 p-4"
+            class="bg-white dark:bg-surface-900 border border-surface-200 dark:border-surface-700 rounded-xl sm:mx-2 p-4"
           >
             <div v-if="project.data.image" class="mb-4">
               <div class="relative mx-auto">
