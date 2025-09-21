@@ -12,13 +12,13 @@ import i18next from "i18next";
         class="hidden md:block absolute h-3/4 w-0.5 bg-white/50 left-1/2 -translate-x-1/2 z-0"
       >
         <div
-          class="absolute -top-4 left-1/2 -translate-x-1/2 flex w-8 h-8 items-center justify-center text-white rounded-full z-10 shadow-sm bg-black/50 dark:bg-surface-900"
+          class="absolute -top-4 left-1/2 -translate-x-1/2 flex w-8 h-8 items-center justify-center text-white rounded-full z-10 shadow-sm bg-surface-700 dark:bg-surface-900"
         >
           <i class="pi pi-desktop"></i>
         </div>
 
         <div
-          class="absolute -bottom-4 left-1/2 -translate-x-1/2 flex w-8 h-8 items-center justify-center text-white rounded-full z-10 shadow-sm bg-black/50 dark:bg-surface-900"
+          class="absolute -bottom-4 left-1/2 -translate-x-1/2 flex w-8 h-8 items-center justify-center text-white rounded-full z-10 shadow-sm bg-surface-700 dark:bg-surface-900"
         >
           <i class="pi pi-globe"></i>
         </div>

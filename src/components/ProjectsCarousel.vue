@@ -18,6 +18,7 @@ export interface Project {
 const props = defineProps<{
   title: string;
   subtitle: string;
+  icon: string;
   projects: {
     [key: string]: Project;
   };
@@ -82,7 +83,9 @@ const openDialog = (project: Project) => {
 </script>
 
 <template>
-  <Card class="bg-transparent backdrop-blur-none bg-none shadow-none p-0 border-none">
+  <Card
+    class="bg-transparent backdrop-blur-none bg-none shadow-none p-0 border-none"
+  >
     <template #title>
       {{ props.title }}
     </template>
@@ -120,10 +123,10 @@ const openDialog = (project: Project) => {
                 />
               </div>
             </div>
-            <div class="font-medium dark:text-white">
+            <div class="font-bold dark:text-white">
               {{ project.data.title }}
             </div>
-            <div class="mb-4 font-light dark:text-white">
+            <div class="mb-4 font dark:text-white">
               {{ project.data.description }}
             </div>
             <div class="flex gap-4 items-center">

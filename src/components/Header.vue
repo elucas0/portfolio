@@ -18,20 +18,20 @@ const emailTooltip = i18next.t("header.contactMe");
 </script>
 
 <template>
-  <div class="flex flex-col md:flex-row items-center gap-8">
-    <div class="w-1/2 flex justify-center items-center">
-      <img
-        src="/assets/moi.jpg"
-        alt="Photo de profil Elouann"
-        class="rounded-full dark:border-4 dark:border-surface-700 shadow-lg dark:shadow-none"
-      />
-    </div>
+  <div class="flex flex-col md:flex-row items-center md:items-stretch gap-8">
+    <img
+      src="/assets/portrait.jpg"
+      alt="Photo de profil Elouann"
+      class="w-1/2 h-full object-cover rounded-xl"
+    />
     <Card>
       <template #title>
         <h1 class="text-5xl font-extrabold">Elouann Lucas</h1>
       </template>
       <template #subtitle>
-        <p class="text-surface-700 dark:text-surface-400">{{ i18next.t("header.description") }}</p>
+        <p class="text-surface-700 dark:text-surface-400">
+          {{ i18next.t("header.description") }}
+        </p>
       </template>
       <template #content>
         <Divider />
@@ -42,7 +42,6 @@ const emailTooltip = i18next.t("header.contactMe");
             icon="pi pi-file-pdf"
             aria-label="{{ i18next.t('header.openCV') }}"
             v-tooltip.bottom="cvTooltip"
-            class="shadow-lg"
           />
           <Button
             as="a"
@@ -52,7 +51,6 @@ const emailTooltip = i18next.t("header.contactMe");
             target="_blank"
             rel="noopener"
             v-tooltip.bottom="githubTooltip"
-            class="shadow-lg"
           />
           <Button
             as="a"
@@ -62,7 +60,6 @@ const emailTooltip = i18next.t("header.contactMe");
             target="_blank"
             rel="noopener"
             v-tooltip.bottom="linkedinTooltip"
-            class="shadow-lg"
           />
           <Button
             as="a"
@@ -71,7 +68,6 @@ const emailTooltip = i18next.t("header.contactMe");
             aria-label="`{{ i18next.t('header.copyEmail') }}`"
             v-tooltip.bottom="emailTooltip"
             @click="openContactForm"
-            class="shadow-lg"
           />
         </div>
       </template>

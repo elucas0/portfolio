@@ -39,6 +39,7 @@ const webProjects = computed(() =>
             :title="i18next.t('projects.gisTitle')"
             :subtitle="i18next.t('projects.gisSubtitle')"
             :projects="gisProjects"
+            icon="pi pi-map"
           />
         </section>
         <Divider class="my-4 md:my-6" />
@@ -47,6 +48,7 @@ const webProjects = computed(() =>
             :title="i18next.t('projects.webTitle')"
             :subtitle="i18next.t('projects.webSubtitle')"
             :projects="webProjects"
+            icon="pi pi-globe"
           />
         </section>
       </template>

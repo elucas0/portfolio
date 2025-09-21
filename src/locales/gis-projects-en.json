@@ -1,10 +1,10 @@
 {
   "ai4eo": {
     "title": "AI4EO",
-    "description": "Report of a poster presented during the 2025 AI4EO conference in Rennes",
-    "status": "On-going",
+    "description": "Report of my participation to the AI4EO conference in Rennes",
+    "status": "Completed",
     "image": "/assets/projects/gis/ai4eo.png",
-    "link": "https://subsequent-ginger-94d.notion.site/Poster-Review-Explaining-raw-data-complexity-to-improve-satellite-onboard-processing-26f0928a8c2880e68c8ed9c84901c231?source=copy_link"
+    "link": "https://subsequent-ginger-94d.notion.site/AI4EO-Symposium-in-Rennes-France-2750928a8c288025b724f7eee0b8ee90?source=copy_link"
   },
   "excursion": {
     "title": "Excursion to EODC and UBA",
@@ -13,19 +13,19 @@
     "image": "/assets/projects/gis/excursion.jpg",
     "link": "https://docs.google.com/document/d/1IIq9mhIE5AcdCeNOhpCrI4pue0TaC7qotVd8LXYLDO4/edit?usp=sharing"
   },
-  "torchgeo": {
-    "title": "TorchGeo",
-    "description": "Implementation of TorchGeo models in a easy-to-use module for inference on satellite imagery",
-    "status": "On-going",
-    "image": "/assets/projects/gis/torchgeo.png",
-    "link": "https://github.com/python-amazing/python-final-project"
-  },
   "arcgis": {
     "title": "Salzburg Tourist Attractions Network Analysis",
     "description": "Network analysis of tourist attractions in Salzburg using ArcGIS Online",
     "status": "Completed",
     "image": "/assets/projects/gis/arcgis.png",
     "demo": "https://arcg.is/1CCD0r0"
+  },
+  "torchgeo": {
+    "title": "TorchGeo",
+    "description": "Group project implementing TorchGeo models in a easy-to-use module for inference on satellite imagery",
+    "status": "Completed",
+    "image": "/assets/projects/gis/torchgeo.png",
+    "link": "https://github.com/python-amazing/python-final-project"
   },
   "qgis": {
     "title": "Festival database modeling",

@@ -7,6 +7,7 @@
         focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-primary
         px-3 py-2 transition-colors duration-200 gap-2 rounded-md
         disabled:cursor-default
+        shadow-md
 }
 
 .p-button-icon-right {

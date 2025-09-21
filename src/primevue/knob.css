@@ -16,10 +16,6 @@
     @apply stroke-surface-200 dark:stroke-surface-700
 }
 
-.p-knob svg path + path {
-    @apply stroke-primary
-}
-
 .p-knob svg text {
     @apply fill-surface-500 dark:fill-surface-400
 }

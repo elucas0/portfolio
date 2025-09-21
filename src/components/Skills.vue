@@ -11,9 +11,41 @@ const skillCategories = ref([
     titleEn: "Programming Languages",
     skills: [
       { name: "JavaScript", level: 90 },
-      { name: "Python", level: 80 },
-      { name: "C++", level: 60 },
+      { name: "Python", level: 90 },
       { name: "Java", level: 80 },
+      { name: "C++", level: 60 },
+    ],
+  },
+  {
+    id: "gis",
+    titleFr: "Technologies SIG",
+    titleEn: "GIS Technologies",
+    skills: [
+      { name: "QGIS", level: 80 },
+      { name: "ArcGIS Products", level: 60 },
+      { name: "PostGIS", level: 50 },
+      { name: "Google Earth Engine", level: 50 },
+    ],
+  },
+  {
+    id: "other",
+    titleFr: "Autres compétences",
+    titleEn: "Other Skills",
+    skills: [
+      { name: "Machine Learning", level: 80 },
+      { name: "Agile/Scrum", level: 50 },
+      { name: "UI/UX Design", level: 30 },
+      { name: "GraphQL", level: 30 },
+    ],
+  },
+  {
+    id: "tools",
+    titleFr: "Outils & DevOps",
+    titleEn: "Tools & DevOps",
+    skills: [
+      { name: "Git", level: 95 },
+      { name: "Docker", level: 85 },
+      { name: "CI/CD", level: 80 },
       { name: "SQL", level: 80 },
     ],
   },
@@ -24,8 +56,8 @@ const skillCategories = ref([
     skills: [
       { name: "React", level: 90 },
       { name: "TailwindCSS", level: 90 },
-      { name: "SCSS/CSS", level: 80 },
       { name: "Vue.js", level: 80 },
+      { name: "SCSS/CSS", level: 75 },
     ],
   },
   {
@@ -38,55 +70,7 @@ const skillCategories = ref([
       { name: "NestJS", level: 60 },
     ],
   },
-  {
-    id: "gis",
-    titleFr: "Technologies SIG",
-    titleEn: "GIS Technologies",
-    skills: [
-      { name: "QGIS", level: 80 },
-      { name: "ArcGIS Pro & ArcGIS Online", level: 60 },
-      { name: "PostGIS", level: 50 },
-      { name: "Google Earth Engine", level: 50 },
-    ],
-  },
-  {
-    id: "tools",
-    titleFr: "Outils & DevOps",
-    titleEn: "Tools & DevOps",
-    skills: [
-      { name: "Git", level: 95 },
-      { name: "Docker", level: 85 },
-      { name: "GitHub Actions", level: 80 },
-    ],
-  },
-  {
-    id: "other",
-    titleFr: "Autres compétences",
-    titleEn: "Other Skills",
-    skills: [
-      { name: "UI/UX Design", level: 80 },
-      { name: "Agile/Scrum", level: 70 },
-      { name: "RESTful APIs", level: 80 },
-      { name: "GraphQL", level: 60 },
-      { name: "Machine Learning", level: 50 },
-    ],
-  },
 ]);
-
-const getSkillLevelText = (level: number): string => {
-  if (level >= 90) return i18next.language === "fr-FR" ? "Expert" : "Expert";
-  if (level >= 80) return i18next.language === "fr-FR" ? "Avancé" : "Advanced";
-  if (level >= 70)
-    return i18next.language === "fr-FR" ? "Intermédiaire" : "Intermediate";
-  return i18next.language === "fr-FR" ? "Débutant" : "Beginner";
-};
-
-const getSkillLevelColor = (level: number): string => {
-  if (level >= 90) return "success";
-  if (level >= 80) return "info";
-  if (level >= 70) return "warning";
-  return "secondary";
-};
 
 const getTitle = (category: any): string => {
   return i18next.language === "fr-FR" ? category.titleFr : category.titleEn;
@@ -95,34 +79,20 @@ const getTitle = (category: any): string => {
 
 <template>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <Card
-      v-for="category in skillCategories"
-      :key="category.id"
-    >
+    <Card v-for="category in skillCategories" :key="category.id">
       <template #title>
         {{ getTitle(category) }}
       </template>
       <template #content>
-        <div v-for="skill in category.skills" :key="skill.name" class="mb-4">
-          <div class="flex justify-between items-center mb-1">
-            <span class="text-sm font-medium text-gray-700 dark:text-gray-300">
-              {{ skill.name }}
-            </span>
-            <Tag
-              :value="getSkillLevelText(skill.level)"
-              :severity="getSkillLevelColor(skill.level)"
-              class="text-xs"
-            />
+        <div class="mt-4 grid grid-cols-2 gap-6">
+          <div
+            v-for="skill in category.skills"
+            :key="skill.name"
+            class="flex flex-col items-center"
+          >
+            <Knob :model-value="skill.level" :readonly="true" :show-value="false" :value-color="skill.level >= 90 ? '#007444' : skill.level >= 75 ? '#4db993' : skill.level >= 50 ? '#80ccb2' : '#b3e0d1'" />
+            <Tag :value="skill.name" severity="secondary" />
           </div>
-          <ProgressBar
-            :value="skill.level"
-            :show-value="false"
-            :class="`h-2`"
-            :pt="{
-              root: { class: 'rounded-full overflow-hidden' },
-              value: { class: 'transition-all duration-1000 ease-out' },
-            }"
-          />
         </div>
       </template>
     </Card>
