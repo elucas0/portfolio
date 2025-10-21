@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import i18next from "i18next";
-import ProgressBar from "primevue/progressbar";
 import Tag from "primevue/tag";
 
 const skillCategories = ref([
@@ -33,7 +32,7 @@ const skillCategories = ref([
     titleEn: "Other Skills",
     skills: [
       { name: "Machine Learning", level: 80 },
-      { name: "Agile/Scrum", level: 50 },
+      { name: "Deep Learning", level: 80 },
       { name: "UI/UX Design", level: 30 },
       { name: "GraphQL", level: 30 },
     ],
@@ -57,7 +56,7 @@ const skillCategories = ref([
       { name: "React", level: 90 },
       { name: "TailwindCSS", level: 90 },
       { name: "Vue.js", level: 80 },
-      { name: "SCSS/CSS", level: 75 },
+      { name: "CSS", level: 75 },
     ],
   },
   {
@@ -78,20 +77,20 @@ const getTitle = (category: any): string => {
 </script>
 
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <div class="grid grid-cols-1 gap-6">
     <Card v-for="category in skillCategories" :key="category.id">
       <template #title>
         {{ getTitle(category) }}
       </template>
       <template #content>
-        <div class="mt-4 grid grid-cols-2 gap-6">
+        <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-6 sm:mx-2 p-4">
           <div
             v-for="skill in category.skills"
             :key="skill.name"
             class="flex flex-col items-center"
           >
             <Knob :model-value="skill.level" :readonly="true" :show-value="false" :value-color="skill.level >= 90 ? '#007444' : skill.level >= 75 ? '#4db993' : skill.level >= 50 ? '#80ccb2' : '#b3e0d1'" />
-            <Tag :value="skill.name" severity="secondary" />
+            <Tag :value="skill.name" />
           </div>
         </div>
       </template>

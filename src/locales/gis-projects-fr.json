@@ -1,4 +1,11 @@
 {
+  "landcover": {
+    "title" : "Classification de la couverture terrestre à partir d'images de drones",
+    "description": "Utilisation d'algorithmes de Machine Learning pour classifier les types de couverture terrestre à partir d'images haute résolution",
+    "status": "En cours",
+    "image": "/assets/projects/gis/landcover.png",
+    "link": "https://github.com/kshitijrajsharma/landcoverclassification"
+  },
   "excursion": {
     "title": "Excursion à l'EODC et à l'UBA",
     "description": "Rapport d'une excursion de groupe lors du cours Copernicus Hubs and Institutions",

@@ -1,6 +1,6 @@
 {
   "header": {
-    "description": "Bonjour ! I am currently a student at the University of Salzburg, Austria in the MSc Copernicus in Digital Earth Program and next year I will be specializing in Geodata Science at the University of Southern Brittany, France.",
+    "description": "Bonjour ! I am currently a student at the University of South Brittany, in the MSc Copernicus in Digital Earth Program and next year I will start my master's thesis at the ESA Φ-lab on the topic of Onboard AI for Earth Observation satellites. Feel free to explore my portfolio and contact me for any inquiries or collaborations !",
     "openCV": "Open CV",
     "openGithub": "Open GitHub profile",
     "openLinkedin": "Open LinkedIn profile",
@@ -28,6 +28,8 @@
     "bachelorSubtitle": "IUT of Vannes, France (2021-2024)",
     "master": "Copernicus Master in Digital Earth",
     "masterSubtitle": "University of Salzburg, Austria and UBS Vannes, France (2024-2026)",
+    "thesis" : "Master's thesis at ESA Φ-lab",
+    "thesisSubtitle": "Onboard AI for Earth Observation satellites (2026)",
     "button": "Visit website"
   },
   "projects": {

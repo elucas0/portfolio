@@ -1,6 +1,6 @@
 {
   "header": {
-    "description": "Hello ! Je suis actuellement étudiant à l'Université de Salzbourg en Autriche dans le programme MSc Copernicus in Digital Earth et l'année prochaine je me spécialiserai en Sciences des Géodonnées à l'Université Bretagne Sud, en France.",
+    "description": "Hello ! Je suis actuellement étudiant à l'Université Bretagne Sud, dans le programme MSc Copernicus in Digital Earth et l'année prochaine je commencerai mon mémoire de master au ESA Φ-lab sur le sujet de l'IA embarquée pour les satellites d'Observation de la Terre. N'hésitez pas à explorer mon portfolio et à me contacter pour toute demande ou collaboration !",
     "openCV": "Ouvrir le CV",
     "openGithub": "Ouvrir le profil GitHub",
     "openLinkedin": "Ouvrir le profil LinkedIn",
@@ -28,6 +28,8 @@
     "bachelorSubtitle": "IUT de Vannes, France (2021-2024)",
     "master": "Master Copernicus en Terre Numérique",
     "masterSubtitle": "Université de Salzbourg, Autriche et UBS Vannes, France (2024-2026)",
+    "thesis" : "Mémoire de master au ESA Φ-lab",
+    "thesisSubtitle": "IA embarquée pour les satellites d'Observation de la Terre (2026)",
     "button": "Ouvrir le site"
   },
   "projects": {

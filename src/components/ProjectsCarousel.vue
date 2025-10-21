@@ -118,7 +118,7 @@ const openDialog = (project: Project) => {
                 <Tag
                   :value="project.data.status"
                   :severity="getProjectStatus(project.data.status)"
-                  class="absolute dark:bg-primary-500 dark:text-primary-100"
+                  class="absolute"
                   style="left: 5px; top: 5px"
                 />
               </div>

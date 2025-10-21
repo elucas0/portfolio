@@ -1,4 +1,11 @@
 {
+  "landcover": {
+    "title" : "Land Cover Classification from UAV Imagery",
+    "description": "Using machine learning to classify land cover types from open high-resolution UAV imagery",
+    "status": "Ongoing",
+    "image": "/assets/projects/gis/landcover.png",
+    "link": "https://github.com/kshitijrajsharma/landcoverclassification"
+  },
   "ai4eo": {
     "title": "AI4EO",
     "description": "Report of my participation to the AI4EO conference in Rennes",

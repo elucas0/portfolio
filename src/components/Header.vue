@@ -18,11 +18,11 @@ const emailTooltip = i18next.t("header.contactMe");
 </script>
 
 <template>
-  <div class="flex flex-col md:flex-row items-center md:items-stretch gap-8">
+  <div class="flex flex-col md:flex-row gap-8">
     <img
       src="/assets/portrait.jpg"
       alt="Photo de profil Elouann"
-      class="w-1/2 h-full object-cover rounded-xl"
+      class="w-1/4 h-full object-cover rounded-xl"
     />
     <Card>
       <template #title>

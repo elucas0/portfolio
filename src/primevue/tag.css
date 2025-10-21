@@ -1,7 +1,7 @@
 .p-tag {
-    @apply inline-flex items-center justify-center
-        bg-primary-100 dark:bg-primary-500/15
-        text-primary-700 dark:text-primary-300
+    @apply inline-flex items-center justify-center text-center
+        bg-primary-100 dark:bg-primary-500
+        text-primary-700 dark:text-primary-100
         text-sm font-bold py-1 px-2 rounded-md gap-1
 }
 
@@ -18,7 +18,7 @@
 }
 
 .p-tag-info {
-    @apply bg-sky-100 dark:bg-sky-500/15 text-sky-700 dark:text-sky-300
+    @apply bg-sky-100 dark:bg-sky-500 text-sky-700 dark:text-sky-100
 }
 
 .p-tag-warn {

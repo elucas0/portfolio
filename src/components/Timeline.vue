@@ -87,6 +87,36 @@ import i18next from "i18next";
           </template>
         </Card>
       </div>
+      <div class="hidden md:block"></div>
+      <div class="hidden md:block"></div>
+      <div class="md:pr-12 relative">
+        <Card>
+          <template #title>{{ i18next.t("timeline.thesis") }}</template>
+          <template #subtitle>
+            {{ i18next.t("timeline.thesisSubtitle") }}
+          </template>
+          <template #content>
+            <div class="flex flex-col items-start">
+              <img
+                src="/assets/logo/logoESAphi-lab.svg"
+                alt="Universität Salzburg"
+                width="200"
+              />
+
+              <Divider />
+              <Button
+                as="a"
+                :label="i18next.t('timeline.button')"
+                href="https://philab.esa.int/"
+                target="_blank"
+                rel="noopener"
+                iconPos="right"
+                icon="pi pi-arrow-right"
+              />
+            </div>
+          </template>
+        </Card>
+      </div>
     </div>
   </div>
 </template>
