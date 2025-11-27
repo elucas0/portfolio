@@ -7,6 +7,9 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AccordionContent: typeof import('primevue/accordioncontent')['default']
+    AccordionHeader: typeof import('primevue/accordionheader')['default']
+    Badge: typeof import('primevue/badge')['default']
     Button: typeof import('primevue/button')['default']
     Card: typeof import('primevue/card')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
@@ -14,6 +17,7 @@ declare module 'vue' {
     Knob: typeof import('primevue/knob')['default']
     Menubar: typeof import('./src/components/Menubar.vue')['default']
     ProjectDialog: typeof import('./src/components/ProjectDialog.vue')['default']
+    ProjectHighlight: typeof import('./src/components/ProjectHighlight.vue')['default']
     ProjectsCarousel: typeof import('./src/components/ProjectsCarousel.vue')['default']
     Skills: typeof import('./src/components/Skills.vue')['default']
     Tag: typeof import('primevue/tag')['default']

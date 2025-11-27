@@ -2,10 +2,13 @@
 import { ref } from "vue";
 import i18next from "i18next";
 import Tag from "primevue/tag";
+import Accordion from "primevue/accordion";
+import { AccordionPanel } from "primevue";
 
 const skillCategories = ref([
   {
     id: "languages",
+    value: "0",
     titleFr: "Langages de programmation",
     titleEn: "Programming Languages",
     skills: [
@@ -17,6 +20,7 @@ const skillCategories = ref([
   },
   {
     id: "gis",
+    value: "1",
     titleFr: "Technologies SIG",
     titleEn: "GIS Technologies",
     skills: [
@@ -28,6 +32,7 @@ const skillCategories = ref([
   },
   {
     id: "other",
+    value: "2",
     titleFr: "Autres compétences",
     titleEn: "Other Skills",
     skills: [
@@ -39,6 +44,7 @@ const skillCategories = ref([
   },
   {
     id: "tools",
+    value: "3",
     titleFr: "Outils & DevOps",
     titleEn: "Tools & DevOps",
     skills: [
@@ -50,6 +56,7 @@ const skillCategories = ref([
   },
   {
     id: "frontend",
+    value: "4",
     titleFr: "Technologies Front-end",
     titleEn: "Front-end Technologies",
     skills: [
@@ -61,6 +68,7 @@ const skillCategories = ref([
   },
   {
     id: "backend",
+    value: "5",
     titleFr: "Technologies Back-end",
     titleEn: "Back-end Technologies",
     skills: [
@@ -77,23 +85,41 @@ const getTitle = (category: any): string => {
 </script>
 
 <template>
-  <div class="grid grid-cols-1 gap-6">
-    <Card v-for="category in skillCategories" :key="category.id">
-      <template #title>
-        {{ getTitle(category) }}
-      </template>
-      <template #content>
-        <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-6 sm:mx-2 p-4">
+  <Accordion :multiple="true" :value="['0']">
+    <AccordionPanel
+      v-for="category in skillCategories"
+      :key="category.id"
+      :value="category.value"
+    >
+      <AccordionHeader
+        >{{ getTitle(category) }}
+        <Badge :value="category.skills.length" class="ml-auto mr-2" />
+      </AccordionHeader>
+      <AccordionContent>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 sm:mx-2 py-4">
           <div
             v-for="skill in category.skills"
             :key="skill.name"
             class="flex flex-col items-center"
           >
-            <Knob :model-value="skill.level" :readonly="true" :show-value="false" :value-color="skill.level >= 90 ? '#007444' : skill.level >= 75 ? '#4db993' : skill.level >= 50 ? '#80ccb2' : '#b3e0d1'" />
+            <Knob
+              :model-value="skill.level"
+              :readonly="true"
+              :show-value="false"
+              :value-color="
+                skill.level >= 90
+                  ? '#007444'
+                  : skill.level >= 75
+                  ? '#4db993'
+                  : skill.level >= 50
+                  ? '#80ccb2'
+                  : '#b3e0d1'
+              "
+            />
             <Tag :value="skill.name" />
           </div>
         </div>
-      </template>
-    </Card>
-  </div>
+      </AccordionContent>
+    </AccordionPanel>
+  </Accordion>
 </template>

@@ -18,18 +18,20 @@ const emailTooltip = i18next.t("header.contactMe");
 </script>
 
 <template>
-  <div class="flex flex-col md:flex-row gap-8">
-    <img
-      src="/assets/portrait.jpg"
-      alt="Photo de profil Elouann"
-      class="w-1/4 h-full object-cover rounded-xl"
-    />
-    <Card>
+  <div class="flex flex-col md:flex-row gap-8 items-center">
+    <div class="shrink-0">
+      <img
+        src="/assets/portrait.jpg"
+        alt="Photo de profil Elouann"
+        class="w-32 h-32 md:w-48 md:h-48 object-cover rounded-full shadow-lg"
+      />
+    </div>
+    <Card class="flex-1">
       <template #title>
         <h1 class="text-5xl font-extrabold">Elouann Lucas</h1>
       </template>
       <template #subtitle>
-        <p class="text-surface-700 dark:text-surface-400">
+        <p class="text-lg text-surface-700 dark:text-surface-400">
           {{ i18next.t("header.description") }}
         </p>
       </template>

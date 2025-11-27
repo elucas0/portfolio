@@ -1,8 +1,8 @@
 {
   "landcover": {
-    "title" : "Land Cover Classification from UAV Imagery",
+    "title": "Land Cover Classification from UAV Imagery",
     "description": "Using machine learning to classify land cover types from open high-resolution UAV imagery",
-    "status": "Ongoing",
+    "status": "Completed",
     "image": "/assets/projects/gis/landcover.png",
     "link": "https://github.com/kshitijrajsharma/landcoverclassification"
   },

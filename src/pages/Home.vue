@@ -14,6 +14,7 @@ import webProjectsEn from "../locales/web-projects-en.json";
 import ProjectsCarousel from "../components/ProjectsCarousel.vue";
 import Divider from "primevue/divider";
 import ScrollTop from "primevue/scrolltop";
+import ProjectHighlight from "../components/ProjectHighlight.vue";
 import { computed } from "vue";
 
 const gisProjects = computed(() =>
@@ -23,14 +24,24 @@ const gisProjects = computed(() =>
 const webProjects = computed(() =>
   Object.values(i18next.language === "fr-FR" ? webProjectsFr : webProjectsEn)
 );
+
+const highlightedProject = computed(() => {
+  const projects = i18next.language === "fr-FR" ? gisProjectsFr : gisProjectsEn;
+  // Select 'landcover' as the featured project, or fallback to the first one
+  return projects["landcover"] || Object.values(projects)[0];
+});
 </script>
 
 <template>
-  <section id="header" class="w-full">
+  <section id="header" class="w-full animate-fade-in-up">
     <Header />
   </section>
 
-  <section class="w-full">
+  <section id="highlight" class="w-full mb-8 animate-fade-in-up">
+    <ProjectHighlight :project="highlightedProject" />
+  </section>
+
+  <section class="w-full animate-fade-in-up">
     <Card class="p-0">
       <template #content>
         <section id="gis-projects">
@@ -55,14 +66,14 @@ const webProjects = computed(() =>
     </Card>
   </section>
 
-  <section id="timeline" class="w-full">
+  <section id="timeline" class="w-full animate-fade-in-up">
     <Timeline />
   </section>
 
-  <section id="skills" class="w-full">
+  <section id="skills" class="w-full animate-fade-in-up">
     <Skills />
   </section>
-  <section class="w-full">
+  <section class="w-full animate-fade-in-up">
     <Footer />
   </section>
   <ScrollTop />

@@ -3,21 +3,18 @@
 }
 
 .p-accordionheader {
-    @apply cursor-pointer disabled:cursor-auto flex items-center justify-between p-[1.125rem] font-semibold
-        bg-surface-0 dark:bg-surface-900
-        text-surface-500 dark:text-surface-400
-        transition-colors duration-200
+    @apply cursor-pointer disabled:cursor-auto flex items-center justify-between p-[1.125rem] font-semibold bg-surface-0 dark:bg-surface-900 text-surface-700 dark:text-surface-400 transition-colors duration-200
 }
 
-.p-accordionpanel:first-child > .p-accordionheader {
+.p-accordionpanel:first-child>.p-accordionheader {
     @apply rounded-t-md
 }
 
-.p-accordionpanel:last-child > .p-accordionheader {
+.p-accordionpanel:last-child>.p-accordionheader {
     @apply rounded-b-md
 }
 
-.p-accordionpanel:last-child.p-accordionpanel-active > .p-accordionheader {
+.p-accordionpanel:last-child.p-accordionpanel-active>.p-accordionheader {
     @apply rounded-b-md
 }
 
@@ -29,7 +26,7 @@
     @apply outline outline-1 outline-offset-[-1px] outline-primary
 }
 
-.p-accordionpanel:not(.p-accordionpanel-active):not(.p-disabled) > .p-accordionheader:hover {
+.p-accordionpanel:not(.p-accordionpanel-active):not(.p-disabled)>.p-accordionheader:hover {
     @apply bg-surface-0 dark:bg-surface-900 text-surface-700 dark:text-surface-0
 }
 
@@ -37,19 +34,19 @@
     @apply text-surface-700 dark:text-surface-0
 }
 
-.p-accordionpanel:not(.p-disabled).p-accordionpanel-active > .p-accordionheader {
+.p-accordionpanel:not(.p-disabled).p-accordionpanel-active>.p-accordionheader {
     @apply bg-surface-0 dark:bg-surface-900 text-surface-700 dark:text-surface-0
 }
 
-.p-accordionpanel:not(.p-disabled).p-accordionpanel-active > .p-accordionheader .p-accordionheader-toggle-icon {
+.p-accordionpanel:not(.p-disabled).p-accordionpanel-active>.p-accordionheader .p-accordionheader-toggle-icon {
     @apply text-surface-700 dark:text-surface-0;
 }
 
-.p-accordionpanel:not(.p-disabled).p-accordionpanel-active > .p-accordionheader:hover  {
+.p-accordionpanel:not(.p-disabled).p-accordionpanel-active>.p-accordionheader:hover {
     @apply bg-surface-0 dark:bg-surface-900 text-surface-700 dark:text-surface-0
 }
 
-.p-accordionpanel:not(.p-disabled).p-accordionpanel-active > .p-accordionheader:hover  .p-accordionheader-toggle-icon {
+.p-accordionpanel:not(.p-disabled).p-accordionpanel-active>.p-accordionheader:hover .p-accordionheader-toggle-icon {
     @apply text-surface-700 dark:text-surface-0;
 }
 

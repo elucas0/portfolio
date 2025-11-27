@@ -88,6 +88,7 @@ const openDialog = (project: Project) => {
   >
     <template #title>
       {{ props.title }}
+      <Badge :value="Object.keys(props.projects).length" class="ml-2" />
     </template>
     <template #subtitle>
       {{ props.subtitle }}
