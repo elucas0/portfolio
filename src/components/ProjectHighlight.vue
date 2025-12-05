@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import Button from "primevue/button";
 import Card from "primevue/card";
 import Tag from "primevue/tag";
@@ -10,6 +10,14 @@ defineProps({
     required: true,
   },
 });
+
+const baseUrl = import.meta.env.BASE_URL || "/portfolio/";
+
+const getImagePath = (path: string) => {
+  const formatPath = `${baseUrl}${path}`;
+
+  return formatPath;
+};
 </script>
 
 <template>
@@ -65,7 +73,7 @@ defineProps({
 
           <div class="relative group perspective-1000 flex justify-center">
             <Image
-              :src="project.image"
+              :src="getImagePath(project.image)"
               :alt="project.title"
               imageClass="relative w-full max-w-md rounded-xl shadow-lg object-cover aspect-video"
             />
