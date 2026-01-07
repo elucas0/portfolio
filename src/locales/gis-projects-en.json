@@ -1,4 +1,11 @@
 {
+  "pysparkml": {
+    "title": "PySpark Machine Learning for Lidar Data",
+    "description": "Scaling machine learning workflows for large geospatial datasets using PySpark",
+    "status": "Completed",
+    "image": "/assets/projects/gis/pyspark.png",
+    "link": "https://github.com/joshuaowm/big-data-project"
+  },
   "landcover": {
     "title": "Land Cover Classification from UAV Imagery",
     "description": "Using machine learning to classify land cover types from open high-resolution UAV imagery",
@@ -6,33 +13,12 @@
     "image": "/assets/projects/gis/landcover.png",
     "link": "https://github.com/kshitijrajsharma/landcoverclassification"
   },
-  "ai4eo": {
-    "title": "AI4EO",
-    "description": "Report of my participation to the AI4EO conference in Rennes",
-    "status": "Completed",
-    "image": "/assets/projects/gis/ai4eo.png",
-    "link": "https://subsequent-ginger-94d.notion.site/AI4EO-Symposium-in-Rennes-France-2750928a8c288025b724f7eee0b8ee90?source=copy_link"
-  },
-  "excursion": {
-    "title": "Excursion to EODC and UBA",
-    "description": "Report of a group excursion during the Copernicus Hubs and Institutions course",
-    "status": "Completed",
-    "image": "/assets/projects/gis/excursion.jpg",
-    "link": "https://docs.google.com/document/d/1IIq9mhIE5AcdCeNOhpCrI4pue0TaC7qotVd8LXYLDO4/edit?usp=sharing"
-  },
   "arcgis": {
     "title": "Salzburg Tourist Attractions Network Analysis",
     "description": "Network analysis of tourist attractions in Salzburg using ArcGIS Online",
     "status": "Completed",
     "image": "/assets/projects/gis/arcgis.png",
     "demo": "https://arcg.is/1CCD0r0"
-  },
-  "torchgeo": {
-    "title": "TorchGeo",
-    "description": "Group project implementing TorchGeo models in a easy-to-use module for inference on satellite imagery",
-    "status": "Completed",
-    "image": "/assets/projects/gis/torchgeo.png",
-    "link": "https://github.com/python-amazing/python-final-project"
   },
   "qgis": {
     "title": "Festival database modeling",
@@ -61,5 +47,19 @@
     "status": "Completed",
     "image": "/assets/projects/gis/gee.png",
     "link": "https://code.earthengine.google.com/?accept_repo=users/elouannlucas56/cde_master"
+  },
+  "ai4eo": {
+    "title": "AI4EO",
+    "description": "Report of my participation to the AI4EO conference in Rennes",
+    "status": "Completed",
+    "image": "/assets/projects/gis/ai4eo.png",
+    "link": "https://subsequent-ginger-94d.notion.site/AI4EO-Symposium-in-Rennes-France-2750928a8c288025b724f7eee0b8ee90?source=copy_link"
+  },
+  "excursion": {
+    "title": "Excursion to EODC and UBA",
+    "description": "Report of a group excursion during the Copernicus Hubs and Institutions course",
+    "status": "Completed",
+    "image": "/assets/projects/gis/excursion.jpg",
+    "link": "https://docs.google.com/document/d/1IIq9mhIE5AcdCeNOhpCrI4pue0TaC7qotVd8LXYLDO4/edit?usp=sharing"
   }
 }
