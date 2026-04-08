@@ -30,7 +30,8 @@
     "masterSubtitle": "University of Salzburg, Austria and UBS Vannes, France (2024-2026)",
     "thesis" : "Master's thesis at ESA Φ-lab",
     "thesisSubtitle": "Onboard AI for Earth Observation satellites (2026)",
-    "button": "Visit website"
+    "button": "Visit website",
+    "button2": "Read proposal"
   },
   "projects": {
     "gisTitle": "GIS & Earth Observation projects",

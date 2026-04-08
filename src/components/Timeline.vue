@@ -104,15 +104,26 @@ import i18next from "i18next";
               />
 
               <Divider />
-              <Button
-                as="a"
-                :label="i18next.t('timeline.button')"
-                href="https://philab.esa.int/"
-                target="_blank"
-                rel="noopener"
-                iconPos="right"
-                icon="pi pi-arrow-right"
-              />
+              <div class="flex gap-3">
+                <Button
+                  as="a"
+                  :label="i18next.t('timeline.button')"
+                  href="https://philab.esa.int/"
+                  target="_blank"
+                  rel="noopener"
+                  iconPos="right"
+                  icon="pi pi-arrow-right"
+                />
+                <Button
+                  as="a"
+                  :label="i18next.t('timeline.button2')"
+                  href="https://docs.google.com/document/d/150_hcCGXsK23TLfb1LwQ6bttH5Z60BivHzHKczQBY7g/edit?usp=sharing"
+                  target="_blank"
+                  rel="noopener"
+                  iconPos="right"
+                  icon="pi pi-book"
+                />
+              </div>
             </div>
           </template>
         </Card>

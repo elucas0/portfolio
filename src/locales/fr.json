@@ -20,7 +20,7 @@
     "projects": "Projets",
     "all": "Tout voir",
     "web": "Applications web",
-    "gis": "SIG & Observation terrestre",
+    "gis": "SIG & Observation de la Terre",
     "skills": "Compétences"
   },
   "timeline": {
@@ -30,10 +30,11 @@
     "masterSubtitle": "Université de Salzbourg, Autriche et UBS Vannes, France (2024-2026)",
     "thesis" : "Mémoire de master au ESA Φ-lab",
     "thesisSubtitle": "IA embarquée pour les satellites d'Observation de la Terre (2026)",
-    "button": "Ouvrir le site"
+    "button": "Ouvrir le site",
+    "button2": "Lire la proposition"
   },
   "projects": {
-    "gisTitle": "Projets SIG & Observation terrestre",
+    "gisTitle": "Projets SIG & Observation de la Terre",
     "gisSubtitle": "Mes projets de développement SIG et d'analyse de données géographiques",
     "webTitle": "Projets d'applications web",
     "webSubtitle": "Mes projets d'applications web et de développement full-stack",

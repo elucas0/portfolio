@@ -1,7 +1,21 @@
 {
+  "jetsonyolo": {
+    "title": "Jetson YOLOv11n SAR Vessel Detection",
+    "description": "Implementing YOLOv11 nano for vessel detection in SAR imagery on NVIDIA Jetson Nano as proxy for orbital edge computing",
+    "status": "Completed",
+    "image": "/assets/projects/gis/000232.rf.78c9e45d58676a70415fc48a77beabe6.jpg",
+    "link": "https://subsequent-ginger-94d.notion.site/AI-Edge-Computing-on-Satellites-for-Vessel-Segmentation-A-Feasibility-Study-on-Resource-Constrained-33c0928a8c28809ebf70ceb69ea40c13?source=copy_link"
+  },
+  "bigearthnet": {
+    "title": "Distributed Deep Learning on BigEarthNet",
+    "description": "Scaling deep learning training and pre-processing on AWS EMR cluster",
+    "status": "Completed",
+    "image": "/assets/projects/gis/bigearthnet.png",
+    "link": ""
+  },
   "pysparkml": {
-    "title": "PySpark Machine Learning for Lidar Data",
-    "description": "Scaling machine learning workflows for large geospatial datasets using PySpark",
+    "title": "Distributed Machine Learning with PySpark",
+    "description": "Scaling machine learning workflows on the Fractal Lidar dataset using PySpark",
     "status": "Completed",
     "image": "/assets/projects/gis/pyspark.png",
     "link": "https://github.com/joshuaowm/big-data-project"

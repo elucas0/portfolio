@@ -27,8 +27,7 @@ const webProjects = computed(() =>
 
 const highlightedProject = computed(() => {
   const projects = i18next.language === "fr-FR" ? gisProjectsFr : gisProjectsEn;
-  // Select 'landcover' as the featured project, or fallback to the first one
-  return projects["landcover"] || Object.values(projects)[0];
+  return projects["jetsonyolo"] || Object.values(projects)[0];
 });
 </script>
 
