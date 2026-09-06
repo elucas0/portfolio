@@ -28,7 +28,7 @@
     "bachelorSubtitle": "IUT de Vannes, France (2021-2024)",
     "master": "Master Copernicus en Terre Numérique",
     "masterSubtitle": "Université de Salzbourg, Autriche et UBS Vannes, France (2024-2026)",
-    "thesis" : "Mémoire de master au ESA Φ-lab",
+    "thesis": "Master's Thesis au ESA Φ-lab",
     "thesisSubtitle": "IA embarquée pour les satellites d'Observation de la Terre (2026)",
     "button": "Ouvrir le site",
     "button2": "Lire la proposition"
@@ -41,9 +41,9 @@
     "open": "Ouvrir le lien",
     "demo": "Ouvrir la démo"
   },
-  "footer" : {
+  "footer": {
     "copyright": "Tous droits réservés",
     "createdBy": "Créé par Elouann depuis la 🌍",
-    "openRepository" : "Ouvrir le dépôt du portfolio"
+    "openRepository": "Ouvrir le dépôt du portfolio"
   }
 }

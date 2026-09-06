@@ -40,7 +40,7 @@ const emailTooltip = i18next.t("header.contactMe");
         <div class="flex gap-4">
           <Button
             as="a"
-            onclick="window.open('./europass_elouann_lucas.pdf')"
+            onclick="window.open('./cv_lucas_elouann.pdf', '_blank')"
             icon="pi pi-file-pdf"
             aria-label="{{ i18next.t('header.openCV') }}"
             v-tooltip.bottom="cvTooltip"

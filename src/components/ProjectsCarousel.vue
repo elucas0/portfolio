@@ -49,13 +49,6 @@ const showNavigators = computed(() => {
   return !(window.innerWidth < 768);
 });
 
-const getProjectStatus = (projectStatus: string) => {
-  const status = projectStatus.toLowerCase();
-  if (status === "completed" || status === "terminé") return "primary";
-  if (status === "on-going" || status === "en cours") return "warn";
-  return "info";
-};
-
 const dialog = useDialog();
 
 const openDialog = (project: Project) => {
@@ -88,7 +81,6 @@ const openDialog = (project: Project) => {
   >
     <template #title>
       {{ props.title }}
-      <Badge :value="Object.keys(props.projects).length" class="ml-2" />
     </template>
     <template #subtitle>
       {{ props.subtitle }}
@@ -116,12 +108,6 @@ const openDialog = (project: Project) => {
                     class="w-full h-full object-cover rounded"
                   />
                 </div>
-                <Tag
-                  :value="project.data.status"
-                  :severity="getProjectStatus(project.data.status)"
-                  class="absolute"
-                  style="left: 5px; top: 5px"
-                />
               </div>
             </div>
             <div class="font-bold dark:text-white">

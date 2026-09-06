@@ -11,7 +11,7 @@
     "description": "Scaling deep learning training and pre-processing on AWS EMR cluster",
     "status": "Completed",
     "image": "/assets/projects/gis/bigearthnet.png",
-    "link": ""
+    "link": "https://github.com/elucas0/big-earth-net-scalable-dl"
   },
   "pysparkml": {
     "title": "Distributed Machine Learning with PySpark",

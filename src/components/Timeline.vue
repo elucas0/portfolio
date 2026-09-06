@@ -117,7 +117,7 @@ import i18next from "i18next";
                 <Button
                   as="a"
                   :label="i18next.t('timeline.button2')"
-                  href="https://docs.google.com/document/d/150_hcCGXsK23TLfb1LwQ6bttH5Z60BivHzHKczQBY7g/edit?usp=sharing"
+                  onclick="window.open('./elouann_lucas_manuscript_final-1.pdf', '_blank')"
                   target="_blank"
                   rel="noopener"
                   iconPos="right"

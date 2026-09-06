@@ -3,7 +3,7 @@
 import Button from "primevue/button";
 import i18next from "i18next";
 
-const githubTooltip = i18next.t("header.openGithub");
+const githubTooltip = i18next.t("footer.openRepository");
 const linkedinTooltip = i18next.t("header.openLinkedin");
 const emailTooltip = i18next.t("header.contactMe");
 </script>
@@ -34,6 +34,7 @@ const emailTooltip = i18next.t("header.contactMe");
           severity="secondary"
           target="_blank"
           rel="noopener"
+          v-tooltip.top="githubTooltip"
         />
         <Button
           as="a"

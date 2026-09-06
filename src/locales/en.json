@@ -28,10 +28,10 @@
     "bachelorSubtitle": "IUT of Vannes, France (2021-2024)",
     "master": "Copernicus Master in Digital Earth",
     "masterSubtitle": "University of Salzburg, Austria and UBS Vannes, France (2024-2026)",
-    "thesis" : "Master's thesis at ESA Φ-lab",
+    "thesis": "Master's thesis at ESA Φ-lab",
     "thesisSubtitle": "Onboard AI for Earth Observation satellites (2026)",
     "button": "Visit website",
-    "button2": "Read proposal"
+    "button2": "View manuscript"
   },
   "projects": {
     "gisTitle": "GIS & Earth Observation projects",
@@ -41,9 +41,9 @@
     "open": "Open link",
     "demo": "Open demo"
   },
-  "footer" : {
+  "footer": {
     "copyright": "All rights reserved",
     "createdBy": "Created by Elouann from 🌍",
-    "openRepository" : "Open portfolio repository"
+    "openRepository": "Open portfolio repository"
   }
 }

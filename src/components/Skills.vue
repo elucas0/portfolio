@@ -93,7 +93,6 @@ const getTitle = (category: any): string => {
     >
       <AccordionHeader
         >{{ getTitle(category) }}
-        <Badge :value="category.skills.length" class="ml-auto mr-2" />
       </AccordionHeader>
       <AccordionContent>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 sm:mx-2 py-4">
