@@ -1,7 +1,7 @@
 .p-tag {
     @apply inline-flex items-center justify-center text-center
         bg-primary-100 dark:bg-primary-500
-        text-primary-700 dark:text-primary-100
+        text-primary-700 dark:text-primary-50
         text-sm font-bold py-1 px-2 rounded-md gap-1
 }
 

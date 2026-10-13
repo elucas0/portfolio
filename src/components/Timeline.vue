@@ -2,6 +2,7 @@
 import Card from "primevue/card";
 import Button from "primevue/button";
 import Divider from "primevue/divider";
+import Tag from "primevue/tag";
 import i18next from "i18next";
 </script>
 
@@ -38,6 +39,12 @@ import i18next from "i18next";
                 width="200"
                 class="rounded-md"
               />
+              <div class="flex flex-wrap gap-2 mt-4">
+                <Tag value="Software engineering" severity="primary" />
+                <Tag value="Linux system administration" severity="primary" />
+                <Tag value="DevOps" severity="primary" />
+                <Tag value="DBMS" severity="primary" />
+              </div>
               <Divider />
               <Button
                 as="a"
@@ -73,6 +80,13 @@ import i18next from "i18next";
                 width="200"
                 class="mt-2 rounded-md"
               />
+              <div class="flex flex-wrap gap-2 mt-4">
+                <Tag value="Remote sensing" severity="primary" />
+                <Tag value="Big Earth Data" severity="primary" />
+                <Tag value="Deep Learning" severity="primary" />
+                <Tag value="Machine Learning" severity="primary" />
+                <Tag value="Image Processing" severity="primary" />
+              </div>
               <Divider />
               <Button
                 as="a"
@@ -102,6 +116,11 @@ import i18next from "i18next";
                 alt="Universität Salzburg"
                 width="200"
               />
+              <div class="flex flex-wrap gap-2 mt-4">
+                <Tag value="ViT" severity="primary" />
+                <Tag value="GeoFM" severity="primary" />
+                <Tag value="Domain gap" severity="primary" />
+              </div>
 
               <Divider />
               <div class="flex gap-3">
@@ -117,7 +136,7 @@ import i18next from "i18next";
                 <Button
                   as="a"
                   :label="i18next.t('timeline.button2')"
-                  onclick="window.open('./GeoDSc_ElouannLucas_MasterThesis.pdf', '_blank')"
+                  href="https://zenodo.org/records/23350441?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjBjZmE2NDgwLTIwNjgtNGIxYy1hMTQxLWZkZmE5YjQwMGQ5MCIsImRhdGEiOnt9LCJyYW5kb20iOiJiZWExNmE0NWY2MDI3YTVkNWIwODg3NmVmNWZjMzM4NyJ9.2hYXBCHMomsUfL-1UnPlLqLEelSiItm058I-HJj7xZyllURN8IEwkc44zI2d-1xUGUr9hIb8i2Vs5-cVdlVGqg"
                   target="_blank"
                   rel="noopener"
                   iconPos="right"

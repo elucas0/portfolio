@@ -9,7 +9,6 @@ declare module 'vue' {
   export interface GlobalComponents {
     AccordionContent: typeof import('primevue/accordioncontent')['default']
     AccordionHeader: typeof import('primevue/accordionheader')['default']
-    Badge: typeof import('primevue/badge')['default']
     Button: typeof import('primevue/button')['default']
     Card: typeof import('primevue/card')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
@@ -20,7 +19,6 @@ declare module 'vue' {
     ProjectHighlight: typeof import('./src/components/ProjectHighlight.vue')['default']
     ProjectsCarousel: typeof import('./src/components/ProjectsCarousel.vue')['default']
     Skills: typeof import('./src/components/Skills.vue')['default']
-    Tag: typeof import('primevue/tag')['default']
     ThemeToggle: typeof import('./src/components/ThemeToggle.vue')['default']
     Timeline: typeof import('./src/components/Timeline.vue')['default']
     ToggleSwitch: typeof import('primevue/toggleswitch')['default']

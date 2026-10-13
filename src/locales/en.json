@@ -1,6 +1,6 @@
 {
   "header": {
-    "description": "Bonjour ! I am currently a student at the University of South Brittany, in the MSc Copernicus in Digital Earth Program and next year I will start my master's thesis at the ESA Φ-lab on the topic of Onboard AI for Earth Observation satellites. Feel free to explore my portfolio and contact me for any inquiries or collaborations !",
+    "description": "Bonjour ! I am a recent graduate of the Erasmus Mundus Joint Master in Digital Earth on the Geo-Data Science track, you can find more information about my work and projects in this portfolio. Feel free to contact me for any inquiries or collaborations!",
     "openCV": "Open CV",
     "openGithub": "Open GitHub profile",
     "openLinkedin": "Open LinkedIn profile",
@@ -34,6 +34,7 @@
     "button2": "View manuscript"
   },
   "projects": {
+    "featuredProject": "Featured project",
     "gisTitle": "GIS & Earth Observation projects",
     "gisSubtitle": "GIS and Earth Observation projects I have worked on during my studies at the University of Salzburg.",
     "webTitle": "Web applications",

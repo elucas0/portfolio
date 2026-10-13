@@ -3,6 +3,7 @@ import Button from "primevue/button";
 import Card from "primevue/card";
 import Tag from "primevue/tag";
 import Image from "primevue/image";
+import i18next from "i18next";
 
 defineProps({
   project: {
@@ -26,7 +27,9 @@ const getImagePath = (path: string) => {
       <template #content>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div class="space-y-6">
-            <Tag value="Featured Project" severity="primary"></Tag>
+            <Tag severity="primary">
+              {{ i18next.t("projects.featuredProject") }}
+            </Tag>
 
             <h3
               class="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight"
@@ -49,7 +52,7 @@ const getImagePath = (path: string) => {
                 class="no-underline"
               >
                 <Button
-                  label="View Project"
+                  :label="i18next.t('projects.open')"
                   icon="pi pi-external-link"
                   class="font-bold"
                 />
@@ -62,7 +65,7 @@ const getImagePath = (path: string) => {
                 class="no-underline"
               >
                 <Button
-                  label="Live Demo"
+                  :label="i18next.t('projects.demo')"
                   icon="pi pi-play"
                   severity="secondary"
                   class="font-bold"
